@@ -37,7 +37,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html
             lang='en'
-            className={cn(['light', 'scroll-pt-20'])}
+            className={cn(['light', 'scroll-pt-24'])}
             suppressHydrationWarning>
             <body
                 className={cn(
