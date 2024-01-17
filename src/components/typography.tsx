@@ -13,7 +13,7 @@ import { cn } from '@/lib/utils'
 const headingBaseClasses = [
     'text-stone-900',
     'dark:text-stone-100',
-    'font-bold',
+    'font-black',
     'tracking-tight',
     'lg:tracking-[-0.035em]'
 ]
@@ -64,7 +64,8 @@ const typographyVariants = cva(['text-lg'], {
                 'xl:text-xl'
             ],
             p: 'max-w-[750px] md:w-2/3 text-lg',
-            lead: 'text-lg text-stone-500 dark:text-stone-500 sm:text-xl md:text-2xl',
+            span: 'text-lg',
+            lead: 'text-lg text-stone-600 dark:text-stone-400 sm:text-xl md:text-2xl',
             blockquote: 'mt-6 border-l-2 pl-6 italic',
             ul: 'list-disc list-inside ps-4 space-y-2 mt-2 ',
             ol: 'list-decimal list-inside space-y-8',
@@ -95,6 +96,7 @@ const variantElementMap: Record<
     h5: 'h5',
     h6: 'h6',
     p: 'p',
+    span: 'span',
     lead: 'p',
     blockquote: 'blockquote',
     ul: 'ul',

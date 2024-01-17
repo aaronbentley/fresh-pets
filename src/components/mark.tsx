@@ -9,10 +9,7 @@ export const Mark = React.forwardRef<
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 1000 1000'
         ref={ref}
-        className={cn(
-            ['size-6', 'fill-stone-950', 'dark:fill-stone-50'],
-            className
-        )}
+        className={cn(['size-6', 'fill-current'], className)}
         {...props}>
         <g id='Sparkles'>
             <path

@@ -1,9 +1,8 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import MainNav from './main-nav'
-import MobileNav from './mobile-nav'
-// import ModeToggle from './mode-toggle'
 import { Mark } from './mark'
+import MobileNav from './mobile-nav'
 import ModeToggle from './mode-toggle'
 import { buttonVariants } from './ui/button'
 
@@ -12,7 +11,7 @@ const Header = () => (
         <div className='container flex items-center'>
             <div className='flex justify-between w-full py-4'>
                 <div className='flex flex-row-reverse md:flex-row items-center md:space-x-4'>
-                    <Mark className='hidden md:flex size-6 fill-brand dark:fill-brand' />
+                    <Mark className='hidden md:flex size-6 fill-brand-dark dark:fill-brand-light' />
                     <Link
                         href='/'
                         className={cn(buttonVariants({ variant: 'ghost' }), [
@@ -23,10 +22,11 @@ const Header = () => (
                             'tracking-tight',
                             'transition-all',
                             'duration-200',
-                            'text-brand-foreground',
-                            'hover:bg-brand',
-                            'hover:bg-brand',
+                            'text-brand-dark',
+                            'dark:text-brand-light',
+                            'hover:bg-brand-dark',
                             'hover:text-stone-50',
+                            'dark:hover:bg-brand-light',
                             'hover:dark:text-stone-950'
                         ])}>
                         {process.env.APP_TITLE!}

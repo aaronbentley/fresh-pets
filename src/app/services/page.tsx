@@ -1,7 +1,9 @@
+import { Typography } from '@/components/typography'
+
 const Services = () => {
     return (
         <div>
-            <h1>Services</h1>
+            <Typography variant='h1'>Services</Typography>
         </div>
     )
 }
