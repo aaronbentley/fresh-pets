@@ -1,33 +1,48 @@
+import oliverChiefPupper from '@/assets/img/oliver.jpg'
+import { Hero, HeroDescription, HeroHeading } from '@/components/hero'
 import { Button } from '@/components/ui/button'
-import { ChevronRight, Loader2, Mail } from 'lucide-react'
+import Image from 'next/image'
 
-export default function Home() {
+const Frontpage = () => {
     return (
-        <div className='container flex flex-col h-screen justify-center items-center gap-4'>
-            <h1 className='text-brand text-5xl font-black mb-48'>Fresh-Pets</h1>
+        <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:bg-opacity-70'>
+            <Image
+                src={oliverChiefPupper}
+                alt='Oliver the Chief Pupper'
+                placeholder='blur'
+                sizes='100vw'
+                className='w-full object-cover h-screen z-0'
+            />
+            <Hero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
+                <HeroHeading className='text-stone-50 dark:text-stone-50 drop-shadow-sm'>
+                    {process.env.APP_STRAPLINE!}
+                </HeroHeading>
 
-            <div className='my-12 flex items-center gap-8'>
-                <Button className='bg-brand'>Button</Button>
-                <Button>Button</Button>
-                <Button variant='destructive'>Destructive</Button>
-                <Button variant='outline'>Outline</Button>
-                <Button variant='ghost'>Ghost</Button>
-                <Button variant='link'>Link</Button>
-            </div>
-            <div className='my-12 flex items-center gap-8'>
+                <HeroDescription className='text-stone-200 dark:text-stone-200 drop-shadow-sm'>
+                    {process.env.APP_DESCRIPTION!}
+                </HeroDescription>
+
                 <Button
-                    variant='outline'
-                    size='icon'>
-                    <ChevronRight className='h-4 w-4' />
+                    variant='default'
+                    size='lg'
+                    className='w-min self-center sm:self-start'
+                    asChild>
+                    <a
+                        href='https://m.me/freshpetsiow'
+                        rel='noopener noreferrer'
+                        target='_blank'>
+                        Make a Booking
+                        <span
+                            className='ml-2 text-2xl'
+                            role='img'
+                            aria-label='dog face emoji'>
+                            🐶
+                        </span>
+                    </a>
                 </Button>
-                <Button>
-                    <Mail className='mr-2 h-4 w-4' /> Login with Email
-                </Button>{' '}
-                <Button disabled>
-                    <Loader2 className='mr-2 h-4 w-4 animate-spin' />
-                    Please wait
-                </Button>
-            </div>
+            </Hero>
         </div>
     )
 }
+
+export default Frontpage

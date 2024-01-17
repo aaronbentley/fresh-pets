@@ -4,8 +4,14 @@
  
 @layer base {
   :root {
-    --brand: 178.519, 100%, 32%;
-    --brand-foreground: 178.519, 100%, 32%;
+    --brand: 178.519 100% 32%;
+    --brand-foreground: 178.519 100% 32%;
+
+    --brand-light: 179 100% 37%;
+    --brand-light-foreground: 179 100% 37%;
+    
+    --brand-dark: 178 100% 27%;
+    --brand-dark-foreground: 178 100% 27%;
 
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
@@ -40,8 +46,14 @@
  
   .dark {
 
-    --brand: 178.519, 100%, 32%;
-    --brand-foreground: 178.519, 100%, 32%;
+    --brand: 178.519 100% 32%;
+    --brand-foreground: 178.519 100% 32%;
+
+    --brand-light: 179 100% 37%;
+    --brand-light-foreground: 179 100% 37%;
+    
+    --brand-dark: 178 100% 27%;
+    --brand-dark-foreground: 178 100% 27%;
 
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;

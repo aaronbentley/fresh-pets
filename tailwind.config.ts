@@ -15,8 +15,18 @@ const config = {
                 sans: ['var(--font-sans)', ...fontFamily.sans]
             },
             colors: {
-                brand: 'hsl(var(--brand))',
-                'brand-foreground': 'hsl(var(--brand-foreground))',
+                brand: 'hsl(var(--brand) / <alpha-value> )',
+                'brand-foreground':
+                    'hsl(var(--brand-foreground) / <alpha-value> )',
+
+                'brand-light': 'hsl(var(--brand-light) / <alpha-value> )',
+                'brand-light-foreground':
+                    'hsl(var(--brand-light-foreground) / <alpha-value> )',
+
+                'brand-dark': 'hsl(var(--brand-dark) / <alpha-value> )',
+                'brand-dark-foreground':
+                    'hsl(var(--brand-dark-foreground) / <alpha-value> )',
+
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
                 ring: 'hsl(var(--ring))',

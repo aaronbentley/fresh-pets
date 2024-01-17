@@ -1,7 +1,12 @@
 import '@/assets/styles/globals.css'
+import Footer from '@/components/footer'
+import Header from '@/components/header'
+import TailwindIndicator from '@/components/tailwind-indicator'
+import ThemeProvider from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { Comfortaa as FontSans } from 'next/font/google'
+import { Suspense } from 'react'
 
 const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -30,7 +35,20 @@ export default function RootLayout({
                     'min-h-screen bg-background font-sans antialiased',
                     fontSans.variable
                 )}>
-                {children}
+                <ThemeProvider
+                    attribute='class'
+                    defaultTheme='system'
+                    enableSystem
+                    disableTransitionOnChange>
+                    <div className='relative flex min-h-screen flex-col'>
+                        <Header />
+                        <div className='flex-1 flex min-h-max flex-col items-center justify-start gap-y-4 md:gap-y-12'>
+                            <Suspense>{children}</Suspense>
+                        </div>
+                        <Footer />
+                    </div>
+                    <TailwindIndicator />
+                </ThemeProvider>
             </body>
         </html>
     )
