@@ -47,35 +47,88 @@ const Frontpage = () => {
                     </Button>
                 </Hero>
             </div>
-            <div className='container w-full flex flex-col gap-8 py-24 md:py-48'>
-                <div className='flex flex-col items-start gap-2'>
-                    <Typography
-                        variant='h2'
-                        className='text-brand-dark dark:text-brand-light'>
-                        Top to Tail Services
-                    </Typography>
-                    <Typography variant='lead'>
-                        Professional dog grooming since 2005
-                    </Typography>
+
+            <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
+                <div className='grid md:grid-cols-2 gap-24'>
+                    <div className='flex flex-col gap-8 justify-center'>
+                        <div className='flex flex-col gap-2'>
+                            <Typography
+                                variant='h2'
+                                className='text-brand-dark dark:text-brand-light'>
+                                Top to Tail Services
+                            </Typography>
+                            <Typography
+                                variant='lead'
+                                className='md:w-3/4'>
+                                Bark, Bath, Bliss: Elevate Your Dog&apos;s
+                                Grooming Experience
+                            </Typography>
+                        </div>
+
+                        <div className='flex flex-col items-start gap-8'>
+                            <Typography variant='p'>
+                                We offer a wide range of services to keep your
+                                dog looking and feeling their best, from a
+                                simple bath and brush to a full groom.
+                            </Typography>
+
+                            <Link
+                                href='/services/'
+                                className={cn(
+                                    buttonVariants({
+                                        variant: 'default',
+                                        size: 'lg'
+                                    }),
+                                    'w-min'
+                                )}>
+                                View our Services
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className='flex flex-col bg-brand/25 h-full min-h-[600px]'></div>
                 </div>
+            </div>
 
-                <Typography variant='p'>
-                    We offer a wide range of services to keep your dog looking
-                    and feeling their best, from a simple bath and brush to a
-                    full groom.
-                </Typography>
+            <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
+                <div className='grid md:grid-cols-2 gap-24'>
+                    <div className='flex flex-col bg-brand/25 h-full min-h-[600px]'></div>
+                    <div className='flex flex-col justify-center gap-8'>
+                        <div className='flex flex-col gap-2'>
+                            <Typography
+                                variant='h2'
+                                className='text-brand-dark dark:text-brand-light'>
+                                Professional dog grooming since 2005
+                            </Typography>
+                            <Typography
+                                variant='lead'
+                                className='md:w-3/4'>
+                                Bark, Bath, Bliss: Elevate Your Dog&apos;s
+                                Grooming Experience
+                            </Typography>
+                        </div>
 
-                <Link
-                    href='/services/'
-                    className={cn(
-                        buttonVariants({
-                            variant: 'default',
-                            size: 'lg'
-                        }),
-                        'w-min'
-                    )}>
-                    View Services
-                </Link>
+                        <div className='flex flex-col items-start gap-8'>
+                            <Typography variant='p'>
+                                We offer a wide range of services to keep your
+                                dog looking and feeling their best, from a
+                                simple bath and brush to a full groom.
+                            </Typography>
+
+                            <Link
+                                href='/about/'
+                                className={cn(
+                                    buttonVariants({
+                                        variant: 'default',
+                                        size: 'lg'
+                                    }),
+                                    'w-min'
+                                )}>
+                                About Us
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

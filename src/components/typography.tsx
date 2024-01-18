@@ -11,6 +11,7 @@ import * as React from 'react'
 import { cn } from '@/lib/utils'
 
 const headingBaseClasses = [
+    'text-balance',
     'text-stone-900',
     'dark:text-stone-100',
     'font-black',

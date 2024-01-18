@@ -6,7 +6,7 @@ import { Mark } from './mark'
 import { Typography } from './typography'
 
 const Footer = () => (
-    <footer className='py-6 md:px-8 md:pt-12 lg:pt-24 md:pb-4 bg-brand-dark'>
+    <footer className='py-6 md:pt-12 lg:pt-32 md:pb-4 mt-16 md:mt-48 bg-brand-dark'>
         <div className='container flex flex-col items-center md:items-end justify-between gap-4 py-4 md:flex-row text-stone-400 dark:text-stone-600 text-sm'>
             <div className='flex items-center gap-x-2 order-2 md:order-1'>
                 <Copyright className='w-3 h-3 text-stone-50' />
