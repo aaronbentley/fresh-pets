@@ -17,7 +17,11 @@ const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' })
  * Generate viewport
  */
 export const generateViewport = (): Viewport => ({
-    themeColor: '#00A29E'
+    // themeColor: '#00A29E'
+    themeColor: [
+        { media: '(prefers-color-scheme: light)', color: '##008985' },
+        { media: '(prefers-color-scheme: dark)', color: '#00bbb7' }
+    ]
 })
 
 /**
