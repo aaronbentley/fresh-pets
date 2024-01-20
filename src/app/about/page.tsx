@@ -1,9 +1,12 @@
 import doggoFive from '@/assets/img/doggo-five.jpg'
+import { GridLoader } from '@/components/loaders'
 import {
     PageHero,
     PageHeroDescription,
     PageHeroHeading
 } from '@/components/page-hero'
+import { PageSection, PageSectionHeading } from '@/components/page-section'
+import { Typography } from '@/components/typography'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -33,6 +36,38 @@ const About = () => {
                         Friendly, knowledgeable staff for all your canine needs
                     </PageHeroDescription>
                 </PageHero>
+            </div>
+
+            <div className='container flex flex-col gap-6 py-20'>
+                <PageSection>
+                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                        Our history
+                    </PageSectionHeading>
+                    <Typography
+                        variant='lead'
+                        className='md:w-2/3 font-black'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec libero lectus, euismod sit amet vestibulum sed.
+                    </Typography>
+                </PageSection>
+            </div>
+
+            <div className='container flex flex-col gap-6 py-20'>
+                <PageSection>
+                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                        Our Team
+                    </PageSectionHeading>
+                    <Typography
+                        variant='lead'
+                        className='md:w-2/3 font-black'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec libero lectus, euismod sit amet vestibulum sed.
+                    </Typography>
+                </PageSection>
+            </div>
+
+            <div className='container max-w-[1080px] flex flex-col gap-6 mx-auto'>
+                <GridLoader items={6} />
             </div>
         </>
     )

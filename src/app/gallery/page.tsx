@@ -72,6 +72,7 @@ const InstagramGallery = async () => {
             'fields',
             'id,media_type,media_url,username,caption,permalink'
         )
+        request.searchParams.append('limit', '15')
         request.searchParams.append('access_token', token)
 
         const response = await fetch(request.href)
@@ -84,14 +85,14 @@ const InstagramGallery = async () => {
                     return (
                         <div
                             key={media.id}
-                            className='group relative aspect-square overflow-hidden'>
+                            className='group relative aspect-square overflow-hidden rounded-lg shadow-md'>
                             <Image
                                 src={media.media_url}
                                 alt={media.caption}
                                 priority={index <= 6 ? true : false}
                                 fill={true}
                                 sizes='(max-width: 768px) 100vw, (min-width: 769px) 33vw'
-                                className='w-full object-center object-cover rounded-lg shadow-md group-hover:scale-105 transition-transform duration-200 ease-in-out'
+                                className='w-full object-center object-cover  group-hover:scale-105 transition-transform duration-200 ease-in-out bg-brand-dark/50 dark:bg-brand-light/50'
                             />
 
                             <div className='absolute bottom-4 right-4 z-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out'>
@@ -153,7 +154,7 @@ const Gallery = async () => {
             </div>
 
             <div className='container max-w-[1080px] flex flex-col gap-6 mx-auto'>
-                <Suspense fallback={<GridLoader />}>
+                <Suspense fallback={<GridLoader items={9} />}>
                     <InstagramGallery />
                 </Suspense>
             </div>

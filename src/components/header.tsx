@@ -24,10 +24,10 @@ const Header = () => (
                             'duration-200',
                             'text-brand-dark',
                             'dark:text-brand-light',
-                            'hover:bg-brand-dark',
-                            'hover:text-background',
-                            'dark:hover:bg-brand-light',
-                            'hover:dark:text-background'
+                            'hover:bg-brand-dark/20',
+                            'hover:text-brand-dark',
+                            'dark:hover:bg-brand-light/20',
+                            'hover:dark:text-brand-light'
                         ])}>
                         {process.env.APP_TITLE!}
                     </Link>

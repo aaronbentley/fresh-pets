@@ -7,7 +7,7 @@ import Link, { LinkProps } from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 import { Mark } from './mark'
-import { Button } from './ui/button'
+import { Button, buttonVariants } from './ui/button'
 import { navigationMenuTriggerStyle } from './ui/navigation-menu'
 import { ScrollArea } from './ui/scroll-area'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
@@ -31,20 +31,27 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent
                 side='left'
-                className='pr-0 pl-8 border-pink-500/25'>
+                className='pr-0 pl-8'>
                 <div className='flex items-center gap-x-6'>
-                    <span
-                        className={cn([
+                    <Link
+                        href='/'
+                        className={cn(buttonVariants({ variant: 'ghost' }), [
+                            'md:mr-6',
                             'font-sans',
-                            'text-brand',
                             'font-extrabold',
-                            'text-2xl',
+                            'text-xl',
                             'tracking-tight',
-                            'transition-colors',
-                            'duration-200'
+                            'transition-all',
+                            'duration-200',
+                            'text-brand-dark',
+                            'dark:text-brand-light',
+                            'hover:bg-brand-dark/20',
+                            'hover:text-brand-dark',
+                            'dark:hover:bg-brand-light/20',
+                            'hover:dark:text-brand-light'
                         ])}>
                         {process.env.NEXT_PUBLIC_APP_TITLE!}
-                    </span>
+                    </Link>
                 </div>
                 <ScrollArea className='mt-8 mb-4 h-[calc(100vh-12rem)] pb-10'>
                     <div className='flex flex-col space-y-2'>

@@ -55,8 +55,8 @@ const Services = () => {
                         className='md:w-2/3 font-black'>
                         We want your dog to look fabulous - therefore all pets
                         require bathing before any clipping and trimming, with
-                        the exception of While You Wait services and Hand
-                        Stripping.
+                        the exception of Hand Stripping and While You Wait
+                        services.
                     </Typography>
                 </PageSection>
             </div>

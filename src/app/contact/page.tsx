@@ -4,6 +4,8 @@ import {
     PageHeroDescription,
     PageHeroHeading
 } from '@/components/page-hero'
+import { PageSection, PageSectionHeading } from '@/components/page-section'
+import { Typography } from '@/components/typography'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -33,6 +35,20 @@ const Contact = () => {
                         We&apos;d love to hear from you
                     </PageHeroDescription>
                 </PageHero>
+            </div>
+
+            <div className='container flex flex-col gap-6 py-20'>
+                <PageSection>
+                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                        Get in touch
+                    </PageSectionHeading>
+                    <Typography
+                        variant='lead'
+                        className='md:w-2/3 font-black'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec libero lectus, euismod sit amet vestibulum sed.
+                    </Typography>
+                </PageSection>
             </div>
         </>
     )
