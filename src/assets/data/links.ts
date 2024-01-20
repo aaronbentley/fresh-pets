@@ -14,6 +14,10 @@ export const links = [
     {
         href: '/faq/',
         label: 'FAQ'
+    },
+    {
+        href: '/contact/',
+        label: 'Contact'
     }
 ]
 

@@ -24,7 +24,7 @@ const MobileNav = () => {
                 <Button
                     size='icon'
                     variant='ghost'
-                    className='md:hidden'>
+                    className='lg:hidden'>
                     <Menu className='h-[1.2rem] w-[1.2rem]' />
                     <span className='sr-only'>Toggle Menu</span>
                 </Button>
@@ -33,7 +33,6 @@ const MobileNav = () => {
                 side='left'
                 className='pr-0 pl-8 border-pink-500/25'>
                 <div className='flex items-center gap-x-6'>
-                    <Mark className='fill-brand size-6' />
                     <span
                         className={cn([
                             'font-sans',
@@ -47,7 +46,7 @@ const MobileNav = () => {
                         {process.env.NEXT_PUBLIC_APP_TITLE!}
                     </span>
                 </div>
-                <ScrollArea className='mt-8 mb-4 h-[calc(100vh-8rem)] pb-10'>
+                <ScrollArea className='mt-8 mb-4 h-[calc(100vh-12rem)] pb-10'>
                     <div className='flex flex-col space-y-2'>
                         {links.map((link, index) => (
                             <MobileLink
@@ -59,6 +58,7 @@ const MobileNav = () => {
                         ))}
                     </div>
                 </ScrollArea>
+                <Mark className='fill-brand size-16' />
             </SheetContent>
         </Sheet>
     )
