@@ -97,7 +97,7 @@ const Frontpage = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md shadow-brand/25'
+                            className='w-full object-cover rounded-lg shadow-md'
                         />
                     </div>
                 </div>
@@ -112,7 +112,7 @@ const Frontpage = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md shadow-brand/25'
+                            className='w-full object-cover rounded-lg shadow-md'
                         />
                     </div>
 
@@ -197,7 +197,7 @@ const Frontpage = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md shadow-brand/25'
+                            className='w-full object-cover rounded-lg shadow-md'
                         />
                     </div>
                 </div>
