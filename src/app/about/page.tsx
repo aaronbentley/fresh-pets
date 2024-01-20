@@ -19,6 +19,7 @@ const About = () => {
                     src={doggoFive}
                     alt='Doggo'
                     placeholder='blur'
+                    priority={true}
                     sizes='100vw'
                     fill={true}
                     className='w-full object-cover'

@@ -24,6 +24,7 @@ const Frontpage = () => {
                     src={oliverChiefPupper}
                     alt='Oliver the Chief Pupper'
                     placeholder='blur'
+                    priority={true}
                     sizes='100vw'
                     className='w-full object-cover h-screen z-0'
                 />
@@ -94,6 +95,7 @@ const Frontpage = () => {
                             src={doggoOne}
                             alt='Doggo'
                             placeholder='blur'
+                            priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
                             className='w-full object-cover rounded-lg shadow-md shadow-brand/25'
                         />
@@ -108,6 +110,7 @@ const Frontpage = () => {
                             src={doggoFive}
                             alt='Doggo'
                             placeholder='blur'
+                            priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
                             className='w-full object-cover rounded-lg shadow-md shadow-brand/25'
                         />
@@ -192,6 +195,7 @@ const Frontpage = () => {
                             src={doggoSix}
                             alt='Doggo'
                             placeholder='blur'
+                            priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
                             className='w-full object-cover rounded-lg shadow-md shadow-brand/25'
                         />
