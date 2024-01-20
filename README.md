@@ -9,11 +9,14 @@
 - [ ] Gallery
 - [ ] About (include team)
 - [ ] FAQ
+- [ ] Privacy
+- [ ] Terms
+- [ ] Not found
 
 ### Content
 
-- [ ] Header
-- [ ] Footer - contact points &info
+- [x] Header
+- [x] Footer
 - [ ] OG image & tags
 
 ### Features
