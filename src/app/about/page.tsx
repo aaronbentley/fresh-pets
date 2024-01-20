@@ -55,7 +55,7 @@ const About = () => {
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
                     <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
-                        Our Team
+                        Meet the team
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
