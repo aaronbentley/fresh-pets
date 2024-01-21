@@ -38,7 +38,7 @@ const About = () => {
                 </PageHero>
             </div>
 
-            <div className='container flex flex-col gap-6 py-20'>
+            <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
                     <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
                         Our history
@@ -52,7 +52,7 @@ const About = () => {
                 </PageSection>
             </div>
 
-            <div className='container flex flex-col gap-6 py-20'>
+            <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
                     <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
                         Meet the team

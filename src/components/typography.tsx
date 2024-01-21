@@ -62,7 +62,8 @@ const typographyVariants = cva(['text-lg'], {
                 'lg:text-lg',
                 'xl:text-xl'
             ],
-            p: 'max-w-[750px] md:w-2/3 text-lg',
+            // p: 'md:w-2/3 text-lg',
+            p: 'text-lg',
             span: 'text-lg',
             lead: 'text-lg sm:text-xl md:text-2xl',
             blockquote: 'mt-6 border-l-2 pl-6 italic',

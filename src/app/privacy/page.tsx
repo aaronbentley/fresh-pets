@@ -4,6 +4,8 @@ import {
     PageHeroDescription,
     PageHeroHeading
 } from '@/components/page-hero'
+import { PageSection, PageSectionHeading } from '@/components/page-section'
+import { Typography } from '@/components/typography'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -35,6 +37,70 @@ const Privacy = () => {
                         privacy rights
                     </PageHeroDescription>
                 </PageHero>
+            </div>
+
+            <div className='container flex flex-col gap-6 py-10'>
+                <PageSection>
+                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                        Data Protection
+                    </PageSectionHeading>
+                    <Typography
+                        variant='p'
+                        className='md:w-2/3'>
+                        Fresh Pets respects its clients privacy and its
+                        committed to protecting all personal data.
+                    </Typography>
+                    <Typography
+                        variant='p'
+                        className='md:w-2/3'>
+                        A client record sheet containing the clients contact
+                        information and details about their pet will be kept by
+                        Fresh Pets.
+                    </Typography>
+                    <Typography
+                        variant='p'
+                        className='md:w-2/3'>
+                        Client record sheets can only be accessed by Fresh Pets
+                        staff.
+                    </Typography>
+                    <Typography
+                        variant='p'
+                        className='md:w-2/3'>
+                        Client record sheets will be deleted at the request of
+                        the client if they cease to use Fresh Pets services.
+                    </Typography>
+                    <Typography
+                        variant='p'
+                        className='md:w-2/3'>
+                        Fresh Pets may retain information about any accidents,
+                        injuries or illnesses even after a client record sheet
+                        has been destroyed.
+                    </Typography>
+                </PageSection>
+            </div>
+
+            <div className='container flex flex-col gap-6 py-10'>
+                <PageSection>
+                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                        Consent
+                    </PageSectionHeading>
+                    <Typography
+                        variant='p'
+                        className='md:w-2/3'>
+                        By choosing our services you consent to Fresh Pets
+                        storing your personal data, including name, address,
+                        email, telephone contact number and details about your
+                        pet(s) on our client record system).
+                    </Typography>
+
+                    <Typography
+                        variant='p'
+                        className='md:w-2/3'>
+                        By choosing our services you consent to Fresh Pets
+                        contacting you with regards to bookings and grooming
+                        services.
+                    </Typography>
+                </PageSection>
             </div>
         </>
     )

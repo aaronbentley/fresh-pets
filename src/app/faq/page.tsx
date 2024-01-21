@@ -6,6 +6,12 @@ import {
 } from '@/components/page-hero'
 import { PageSection, PageSectionHeading } from '@/components/page-section'
 import { Typography } from '@/components/typography'
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger
+} from '@/components/ui/accordion'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -49,6 +55,143 @@ const Faq = () => {
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
                 </PageSection>
+            </div>
+
+            <div className='container max-w-[880px] px-4 mx-auto'>
+                <Accordion
+                    type='single'
+                    className='w-full'
+                    collapsible>
+                    <AccordionItem value='item-1'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            How long will the groom take?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography variant='p'>
+                                On average a full groom will take 2.5 hours
+                                however the length of time is dependable on
+                                size, coat type and temperament.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value='item-2'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            Do you have a mild shampoo for itchy skin?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography variant='p'>
+                                Yes we do. We can also offer advice on possible
+                                causes and solutions when you come in for your
+                                appointment.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value='item-3'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            Can I stay with my dog whilst being groomed?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography
+                                variant='p'
+                                className='mb-6'>
+                                We find that the majority of dogs, even very
+                                nervous ones, cope well once grooming has
+                                started and can actually become more anxious
+                                with their owner present.
+                            </Typography>
+                            <Typography variant='p'>
+                                If you are worried that your dog is going to
+                                find the grooming process stressful, you can
+                                stay close by and a member of the team will
+                                phone you to come back and stay if necessary.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value='item-4'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            My dog is knotty, will this cost extra?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography variant='p'>
+                                A few knots here and there will not increase the
+                                price however, severe matting will result in
+                                higher charges due to the added wear on our
+                                equipment and additonal time required for the
+                                type of groom.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value='item-5'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            Do you offer a dry clip service?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography variant='p'>
+                                We do not offer a dry clip service.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value='item-6'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            Do you offer an ear plucking service?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography variant='p'>
+                                Only if absolutely necessary and with owners
+                                consent. We will not pluck ears if there is any
+                                sign of an infection or trauma to the ear.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value='item-7'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            Do you do anal gland expression?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography
+                                variant='p'
+                                className='mb-6'>
+                                We do not offer this service.
+                            </Typography>
+                            <Typography variant='p'>
+                                It has been advised by the{' '}
+                                <a
+                                    href='https://www.rcvs.org.uk/'
+                                    title='Visit Royal College
+                                of Veterinary Surgeons website'
+                                    className='text-brand-dark dark:text-brand-light underline-offset-2  hover:underline'
+                                    target='_blank'>
+                                    RCVS (Royal College of Veterinary Surgeons)
+                                </a>{' '}
+                                that it is considered an invasive treatment and
+                                should be carried out by a vet. We can check and
+                                advise you on whether they require expression.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value='item-8'>
+                        <AccordionTrigger className='text-xl font-black'>
+                            What type of payment do you accept?
+                        </AccordionTrigger>
+                        <AccordionContent asChild>
+                            <Typography
+                                variant='p'
+                                className='mb-6'>
+                                We accept cash or card payments.
+                            </Typography>
+                            <Typography variant='p'>
+                                We do not accept cheques.
+                            </Typography>
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
             </div>
         </>
     )

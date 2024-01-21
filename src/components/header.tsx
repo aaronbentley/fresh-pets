@@ -42,14 +42,18 @@ const Header = () => (
                         title='Make a Booking with Fresh pets'
                         className={cn(
                             buttonVariants({
-                                variant: 'default'
+                                variant: 'default',
+                                size: 'sm'
                             }),
                             'font-black',
                             'bg-brand-dark',
                             'dark:bg-brand-light',
                             'text-background',
                             'hover:bg-brand',
-                            'dark:hover:bg-brand'
+                            'dark:hover:bg-brand',
+                            'md:h-10',
+                            'md:px-4',
+                            'md:py-2'
                         )}>
                         Make a Booking
                     </a>

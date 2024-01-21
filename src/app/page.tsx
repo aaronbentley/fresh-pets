@@ -53,8 +53,8 @@ const Frontpage = () => {
             </div>
 
             <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
-                <div className='grid md:grid-cols-2 gap-20'>
-                    <div className='flex flex-col gap-8 justify-center'>
+                <div className='grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16'>
+                    <div className='flex flex-col gap-8 justify-center order-2 md:order-1'>
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
@@ -63,14 +63,16 @@ const Frontpage = () => {
                             </Typography>
                             <Typography
                                 variant='lead'
-                                className='md:w-3/4'>
+                                className='lg:w-3/4'>
                                 Bark, Bath, Bliss: Elevate Your Dog&apos;s
                                 Grooming Experience
                             </Typography>
                         </div>
 
                         <div className='flex flex-col items-start gap-8'>
-                            <Typography variant='p'>
+                            <Typography
+                                variant='p'
+                                className='lg:w-2/3'>
                                 We offer a wide range of services to keep your
                                 dog looking and feeling their best, from a
                                 simple bath and brush to a full groom.
@@ -90,7 +92,7 @@ const Frontpage = () => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col order-1 md:order-2'>
                         <Image
                             src={doggoOne}
                             alt='Doggo'
@@ -104,7 +106,7 @@ const Frontpage = () => {
             </div>
 
             <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
-                <div className='grid md:grid-cols-2 gap-24'>
+                <div className='grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16'>
                     <div className='flex flex-col'>
                         <Image
                             src={doggoFive}
@@ -125,13 +127,15 @@ const Frontpage = () => {
                             </Typography>
                             <Typography
                                 variant='lead'
-                                className='md:w-3/4'>
+                                className='lg:w-3/4'>
                                 Professional dog grooming since 2005
                             </Typography>
                         </div>
 
                         <div className='flex flex-col items-start gap-8'>
-                            <Typography variant='p'>
+                            <Typography
+                                variant='p'
+                                className='lg:w-2/3'>
                                 We offer a wide range of services to keep your
                                 dog looking and feeling their best, from a
                                 simple bath and brush to a full groom.
@@ -154,8 +158,8 @@ const Frontpage = () => {
             </div>
 
             <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
-                <div className='grid md:grid-cols-2 gap-20'>
-                    <div className='flex flex-col gap-8 justify-center'>
+                <div className='grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16'>
+                    <div className='flex flex-col gap-8 justify-center order-2 md:order-1'>
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
@@ -164,13 +168,15 @@ const Frontpage = () => {
                             </Typography>
                             <Typography
                                 variant='lead'
-                                className='md:w-3/4'>
+                                className='lg:w-3/4'>
                                 Ready for a night on the town
                             </Typography>
                         </div>
 
                         <div className='flex flex-col items-start gap-8'>
-                            <Typography variant='p'>
+                            <Typography
+                                variant='p'
+                                className='lg:w-2/3'>
                                 Ready to be bow-wowed? Our dog grooming gallery
                                 awaits, showcasing the epitome of pampered pooch
                                 perfection.
@@ -190,7 +196,7 @@ const Frontpage = () => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col order-1 md:order-2'>
                         <Image
                             src={doggoSix}
                             alt='Doggo'
