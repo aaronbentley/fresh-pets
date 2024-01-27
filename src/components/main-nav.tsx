@@ -30,6 +30,7 @@ const MainNav = () => {
                                     className={cn(
                                         navigationMenuTriggerStyle(),
                                         [
+                                            'font-black',
                                             'data-[active]:text-stone-50',
                                             'dark:data-[active]:text-stone-950',
                                             'data-[active]:bg-brand-dark',

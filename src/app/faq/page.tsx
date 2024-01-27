@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const Faq = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:dark:bg-opacity-60 after:backdrop-contrast-125 after:dark:backdrop-contrast-125 h-96'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-96'>
                 <Image
                     src={doggoFour}
                     alt='Doggo'
@@ -63,7 +63,7 @@ const Faq = () => {
                     className='w-full'
                     collapsible>
                     <AccordionItem value='item-1'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             How long will the groom take?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -76,7 +76,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-2'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             Do you have a mild shampoo for itchy skin?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -89,7 +89,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-3'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             Can I stay with my dog whilst being groomed?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -111,7 +111,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-4'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             My dog is knotty, will this cost extra?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -126,7 +126,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-5'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             Do you offer a dry clip service?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -137,7 +137,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-6'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             Do you offer an ear plucking service?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -150,7 +150,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-7'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             Do you do anal gland expression?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -177,7 +177,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-8'>
-                        <AccordionTrigger className='text-xl font-black'>
+                        <AccordionTrigger className='text-xl font-black text-start'>
                             What type of payment do you accept?
                         </AccordionTrigger>
                         <AccordionContent asChild>

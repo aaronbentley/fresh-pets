@@ -100,12 +100,8 @@ const MobileLink = ({
             }}
             className={cn(
                 navigationMenuTriggerStyle(),
-                active && [
-                    'text-stone-50',
-                    'dark:text-stone-950',
-                    'bg-brand',
-                    'dark:bg-brand'
-                ],
+                'font-black',
+                active && ['text-background', 'bg-brand', 'dark:bg-brand'],
                 className
             )}
             {...props}>

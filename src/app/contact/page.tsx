@@ -1,4 +1,5 @@
 import doggoOne from '@/assets/img/doggo-one.jpg'
+import DynamicMap from '@/components/dynamic-map'
 import {
     PageHero,
     PageHeroDescription,
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 const Contact = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:dark:bg-opacity-60 after:backdrop-contrast-125 after:dark:backdrop-contrast-125 h-96'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-96'>
                 <Image
                     src={doggoOne}
                     alt='Doggo'
@@ -48,6 +49,22 @@ const Contact = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
+                </PageSection>
+            </div>
+
+            <div className='container flex flex-col gap-6 py-20'>
+                <PageSection>
+                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                        Where to find us
+                    </PageSectionHeading>
+                    <Typography
+                        variant='lead'
+                        className='md:w-2/3 font-black'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec libero lectus, euismod sit amet vestibulum sed.
+                    </Typography>
+
+                    <DynamicMap />
                 </PageSection>
             </div>
         </>

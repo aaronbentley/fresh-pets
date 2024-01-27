@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import MainNav from './main-nav'
+import MakeBooking from './make-booking'
 import { Mark } from './mark'
 import MobileNav from './mobile-nav'
 import ModeToggle from './mode-toggle'
@@ -36,27 +37,7 @@ const Header = () => (
                 </div>
                 <div className='flex items-center gap-4'>
                     <ModeToggle />
-
-                    <a
-                        href='#'
-                        title='Make a Booking with Fresh pets'
-                        className={cn(
-                            buttonVariants({
-                                variant: 'default',
-                                size: 'sm'
-                            }),
-                            'font-black',
-                            'bg-brand-dark',
-                            'dark:bg-brand-light',
-                            'text-background',
-                            'hover:bg-brand',
-                            'dark:hover:bg-brand',
-                            'md:h-10',
-                            'md:px-4',
-                            'md:py-2'
-                        )}>
-                        Make a Booking
-                    </a>
+                    <MakeBooking />
                 </div>
             </div>
         </div>

@@ -19,12 +19,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.5":
+"@babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.23.2":
   version: 7.23.8
   resolution: "@babel/runtime@npm:7.23.8"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
   checksum: ba5e8fbb32ef04f6cab5e89c54a0497c2fde7b730595cc1af93496270314f13ff2c6a9360fdb2f0bdd4d6b376752ce3cf85642bd6b876969a6a62954934c2df8
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.23.7":
+  version: 7.23.9
+  resolution: "@babel/runtime@npm:7.23.9"
+  dependencies:
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: e71205fdd7082b2656512cc98e647d9ea7e222e4fe5c36e9e5adc026446fcc3ba7b3cdff8b0b694a0b78bb85db83e7b1e3d4c56ef90726682b74f13249cf952d
   languageName: node
   linkType: hard
 
@@ -266,6 +275,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@googlemaps/js-api-loader@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@googlemaps/js-api-loader@npm:1.16.2"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+  checksum: aa4e7474f1a379a9e530c514061ec2c7d5409b8652f186873e0a0772fc4194db08d2793f12277560206642b8f7255a4df9f12358aca2bb3b279bdf8ed3e3f11c
+  languageName: node
+  linkType: hard
+
+"@googlemaps/markerclusterer@npm:2.3.2":
+  version: 2.3.2
+  resolution: "@googlemaps/markerclusterer@npm:2.3.2"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    supercluster: "npm:^8.0.1"
+  checksum: d19bbf174e624b1a442d131ba14e67f8199dd203c90514086f4ba1223866812bf8000f4e7360a0117513b1ffb4f47e1a11a1cb1df42fcae999415fcede656b89
+  languageName: node
+  linkType: hard
+
 "@grpc/grpc-js@npm:~1.9.6":
   version: 1.9.14
   resolution: "@grpc/grpc-js@npm:1.9.14"
@@ -371,10 +399,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/env@npm:14.1.0"
-  checksum: f45ce1e3dad87cdbddc58b06bd411f44a6d21dfc2c344d02a5e1b07f56fbc9a39e192c0b0917df9f2e9e4e2156306a8c78f173ca4b53932c2793e67797462a23
+"@next/env@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/env@npm:14.1.1-canary.16"
+  checksum: d0176f59a9ae17bb0cb2fae18d1d0ce072e0ba12e425f95dcffc722addd726adb8ac8ac5513aa7c9a43303ebe244da124649b93b69a2dabf156a133be2138301
   languageName: node
   linkType: hard
 
@@ -387,65 +415,65 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-darwin-arm64@npm:14.1.0"
+"@next/swc-darwin-arm64@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-darwin-arm64@npm:14.1.1-canary.16"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-darwin-x64@npm:14.1.0"
+"@next/swc-darwin-x64@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-darwin-x64@npm:14.1.1-canary.16"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-linux-arm64-gnu@npm:14.1.0"
+"@next/swc-linux-arm64-gnu@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-linux-arm64-gnu@npm:14.1.1-canary.16"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-linux-arm64-musl@npm:14.1.0"
+"@next/swc-linux-arm64-musl@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-linux-arm64-musl@npm:14.1.1-canary.16"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-linux-x64-gnu@npm:14.1.0"
+"@next/swc-linux-x64-gnu@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-linux-x64-gnu@npm:14.1.1-canary.16"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-linux-x64-musl@npm:14.1.0"
+"@next/swc-linux-x64-musl@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-linux-x64-musl@npm:14.1.1-canary.16"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-win32-arm64-msvc@npm:14.1.0"
+"@next/swc-win32-arm64-msvc@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-win32-arm64-msvc@npm:14.1.1-canary.16"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-ia32-msvc@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-win32-ia32-msvc@npm:14.1.0"
+"@next/swc-win32-ia32-msvc@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-win32-ia32-msvc@npm:14.1.1-canary.16"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@next/swc-win32-x64-msvc@npm:14.1.0"
+"@next/swc-win32-x64-msvc@npm:14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "@next/swc-win32-x64-msvc@npm:14.1.1-canary.16"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1266,6 +1294,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-google-maps/api@npm:^2.19.2":
+  version: 2.19.2
+  resolution: "@react-google-maps/api@npm:2.19.2"
+  dependencies:
+    "@googlemaps/js-api-loader": "npm:1.16.2"
+    "@googlemaps/markerclusterer": "npm:2.3.2"
+    "@react-google-maps/infobox": "npm:2.19.2"
+    "@react-google-maps/marker-clusterer": "npm:2.19.2"
+    "@types/google.maps": "npm:3.53.5"
+    invariant: "npm:2.2.4"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18
+    react-dom: ^16.8 || ^17 || ^18
+  checksum: 3bc22bc1594eafbe2962ba48e6491485dab24f9bfa96441ee5484502f01b6daae46147bea836ba448ca157b348c617487eb7e95b6c44337e9d89f56ddc8d4631
+  languageName: node
+  linkType: hard
+
+"@react-google-maps/infobox@npm:2.19.2":
+  version: 2.19.2
+  resolution: "@react-google-maps/infobox@npm:2.19.2"
+  checksum: c0b7d91b85ead498d84e210f686801b5f6f47a9c4f460e27196f57dff11b28fd3f4f3e4178ff17dd3942c3199f7defa4b5deef552d9f2b88786f7e285bc398fc
+  languageName: node
+  linkType: hard
+
+"@react-google-maps/marker-clusterer@npm:2.19.2":
+  version: 2.19.2
+  resolution: "@react-google-maps/marker-clusterer@npm:2.19.2"
+  checksum: a89cf3a2d110f34e017b503985695b45eeb21956c58bada81dddf102460d150b074832f387741d2de77ba35d81d67b1468614204c29ad8d00efd15545112cbe4
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:^1.3.3":
   version: 1.7.0
   resolution: "@rushstack/eslint-patch@npm:1.7.0"
@@ -1339,6 +1398,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/google.maps@npm:3.53.5":
+  version: 3.53.5
+  resolution: "@types/google.maps@npm:3.53.5"
+  checksum: 4b493c9f98dd2e4d8efcbf67deae05f8a9315e0ac457deca207f0cf95ab2f784b5a01664e11ebab1cf55aed4db07c75d0a24078d02e3c647c111e3ce473f3fc6
+  languageName: node
+  linkType: hard
+
 "@types/http-errors@npm:*":
   version: 2.0.4
   resolution: "@types/http-errors@npm:2.0.4"
@@ -1383,12 +1449,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0, @types/node@npm:^20.10.3, @types/node@npm:^20.11.5":
+"@types/node@npm:*, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0, @types/node@npm:^20.10.3":
   version: 20.11.5
   resolution: "@types/node@npm:20.11.5"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 6d18cec852f5cfbed3ec42b5c01c026e7a3f9da540d6e3d6738d4cee9979fb308cf27b6df7ba40a6553e7bc82e678f0ef53ba6e6ad52e5b86bd97b7783c2a42c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.11.7":
+  version: 20.11.7
+  resolution: "@types/node@npm:20.11.7"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: ba4b41542b64f21a881a277189e761c553d00af0b1c02f2d8a47ebe8bc29a00ed21b45adf0bf9af2cf8ea6c92a443853d4f7b690081ceaecc150719cc574e9ea
   languageName: node
   linkType: hard
 
@@ -2975,7 +3050,8 @@ __metadata:
     "@radix-ui/react-scroll-area": "npm:^1.0.5"
     "@radix-ui/react-separator": "npm:^1.0.3"
     "@radix-ui/react-slot": "npm:^1.0.2"
-    "@types/node": "npm:^20.11.5"
+    "@react-google-maps/api": "npm:^2.19.2"
+    "@types/node": "npm:^20.11.7"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     autoprefixer: "npm:^10.4.17"
@@ -2984,13 +3060,14 @@ __metadata:
     eslint: "npm:^8.56.0"
     eslint-config-next: "npm:14.1.0"
     firebase-admin: "npm:^12.0.0"
-    lucide-react: "npm:^0.312.0"
-    next: "npm:^14.1.0"
+    lucide-react: "npm:^0.316.0"
+    next: "npm:v14.1.1-canary.16"
     next-themes: "npm:^0.2.1"
     postcss: "npm:^8.4.33"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    tailwind-merge: "npm:^2.2.0"
+    react-static-google-map: "npm:^0.9.0"
+    tailwind-merge: "npm:^2.2.1"
     tailwindcss: "npm:^3.4.1"
     tailwindcss-animate: "npm:^1.0.7"
     typescript: "npm:^5.3.3"
@@ -3464,7 +3541,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"invariant@npm:^2.2.4":
+"invariant@npm:2.2.4, invariant@npm:^2.2.2, invariant@npm:^2.2.4":
   version: 2.2.4
   resolution: "invariant@npm:2.2.4"
   dependencies:
@@ -3932,6 +4009,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kdbush@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "kdbush@npm:4.0.2"
+  checksum: d50183b299c57e2573114e902ab47aed7494be3ca41b66d456779ecc3b2f153f491de341f9609965414784f728894f9a9001152eb9f3a40cd3755521c06a45a3
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^4.5.3":
   version: 4.5.4
   resolution: "keyv@npm:4.5.4"
@@ -4128,12 +4212,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.312.0":
-  version: 0.312.0
-  resolution: "lucide-react@npm:0.312.0"
+"lucide-react@npm:^0.316.0":
+  version: 0.316.0
+  resolution: "lucide-react@npm:0.316.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 491b3403f51a1740c8cb0a558c4151c28eb175fc386099dbf9eaa63a314bb941ecb5cf6434b233ef6708e2af51ebaf8362987cc59958584990c1d1b5f34d4237
+  checksum: e1f90af4c62042a99fba873422e9e1538afc48e81d242ffd1cbc2b9d6e0257f153201370f8ae8c08ec6b95214c78c17a6c1b7e8f6cb3bce8f1dae9509f866b6f
   languageName: node
   linkType: hard
 
@@ -4375,20 +4459,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^14.1.0":
-  version: 14.1.0
-  resolution: "next@npm:14.1.0"
+"next@npm:v14.1.1-canary.16":
+  version: 14.1.1-canary.16
+  resolution: "next@npm:14.1.1-canary.16"
   dependencies:
-    "@next/env": "npm:14.1.0"
-    "@next/swc-darwin-arm64": "npm:14.1.0"
-    "@next/swc-darwin-x64": "npm:14.1.0"
-    "@next/swc-linux-arm64-gnu": "npm:14.1.0"
-    "@next/swc-linux-arm64-musl": "npm:14.1.0"
-    "@next/swc-linux-x64-gnu": "npm:14.1.0"
-    "@next/swc-linux-x64-musl": "npm:14.1.0"
-    "@next/swc-win32-arm64-msvc": "npm:14.1.0"
-    "@next/swc-win32-ia32-msvc": "npm:14.1.0"
-    "@next/swc-win32-x64-msvc": "npm:14.1.0"
+    "@next/env": "npm:14.1.1-canary.16"
+    "@next/swc-darwin-arm64": "npm:14.1.1-canary.16"
+    "@next/swc-darwin-x64": "npm:14.1.1-canary.16"
+    "@next/swc-linux-arm64-gnu": "npm:14.1.1-canary.16"
+    "@next/swc-linux-arm64-musl": "npm:14.1.1-canary.16"
+    "@next/swc-linux-x64-gnu": "npm:14.1.1-canary.16"
+    "@next/swc-linux-x64-musl": "npm:14.1.1-canary.16"
+    "@next/swc-win32-arm64-msvc": "npm:14.1.1-canary.16"
+    "@next/swc-win32-ia32-msvc": "npm:14.1.1-canary.16"
+    "@next/swc-win32-x64-msvc": "npm:14.1.1-canary.16"
     "@swc/helpers": "npm:0.5.2"
     busboy: "npm:1.6.0"
     caniuse-lite: "npm:^1.0.30001579"
@@ -4426,7 +4510,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: dbb1ef8d22eec29a9127d28ed46eb34f14e3f7f7b4e4b91dc96027feb4d9ead554a804275484d9a54026e6e55d632d3997561e598c1fb8e8956e77614f39765f
+  checksum: 3bf21d6f4e7e34dceee7fb45b96500dd90e542fd8b0c44fbad106eb38ab6eacc6e5c3d1f52074b07f83cf0d5f83b49de71dca1e4f651a411e42115e241688cc7
   languageName: node
   linkType: hard
 
@@ -4846,7 +4930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -4946,6 +5030,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-promise@npm:2.0.0":
+  version: 2.0.0
+  resolution: "react-promise@npm:2.0.0"
+  dependencies:
+    prop-types: "npm:^15.6.0"
+  peerDependencies:
+    react: "*"
+  checksum: 5ac8b09ecf5b14f8a80d48e4afe962cb0b595cb6a1c104009c2543ebfc1115dbe642ac05ce2a0ba0f3f265d8faee3476c3b828d3d8b44119a56d278ba84b3e8b
+  languageName: node
+  linkType: hard
+
 "react-remove-scroll-bar@npm:^2.3.3":
   version: 2.3.4
   resolution: "react-remove-scroll-bar@npm:2.3.4"
@@ -4981,6 +5076,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-static-google-map@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "react-static-google-map@npm:0.9.0"
+  dependencies:
+    invariant: "npm:^2.2.2"
+    react: "npm:>=0.14.x"
+    react-promise: "npm:2.0.0"
+  checksum: 95ac37ba6f3582c2956e8ba4e25566dc5b005eed45d8203b14e35c74c37120a31c088e337cc58138efccfd1b09eeadca982ebb4ad0b0a004b69bf0212eff2c5e
+  languageName: node
+  linkType: hard
+
 "react-style-singleton@npm:^2.2.1":
   version: 2.2.1
   resolution: "react-style-singleton@npm:2.2.1"
@@ -4998,7 +5104,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:>=0.14.x, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -5552,6 +5658,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"supercluster@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "supercluster@npm:8.0.1"
+  dependencies:
+    kdbush: "npm:^4.0.2"
+  checksum: 79121e6dbff67b3036ea6651f3baddb942478830ba3ecbc27455715ab5bd269de8381dc04618c0c15963346ea2ed0f81cd5f767c2978a63e2841807c73445d57
+  languageName: node
+  linkType: hard
+
 "supports-color@npm:^7.1.0":
   version: 7.2.0
   resolution: "supports-color@npm:7.2.0"
@@ -5568,12 +5683,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwind-merge@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "tailwind-merge@npm:2.2.0"
+"tailwind-merge@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "tailwind-merge@npm:2.2.1"
   dependencies:
-    "@babel/runtime": "npm:^7.23.5"
-  checksum: 41476d686af101c770401f4db509ffea9ec13bf99fd18185903dd86df2b71b3f512d9373b0f2785cb9e9abf093f39373327a29e9b3dde643b9daf7062f77c4ba
+    "@babel/runtime": "npm:^7.23.7"
+  checksum: 14ab965ec897e9377484b7593f7a700dde09b8035b762ad42652622a3ed1f202b203f48c0f235c0b1b38e9390470d94458f6f9010d33a5a18d71b15f38b986a6
   languageName: node
   linkType: hard
 

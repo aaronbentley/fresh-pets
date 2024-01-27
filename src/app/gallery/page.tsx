@@ -8,6 +8,8 @@ import {
 } from '@/components/page-hero'
 import { PageSection, PageSectionHeading } from '@/components/page-section'
 import { Typography } from '@/components/typography'
+import { Button, buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 import { InstagramMedia } from '@/types'
 import * as admin from 'firebase-admin'
 import { Metadata } from 'next'
@@ -118,7 +120,7 @@ const InstagramGallery = async () => {
 const Gallery = async () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:dark:bg-opacity-60 after:backdrop-contrast-125 after:dark:backdrop-contrast-125 h-96'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-96'>
                 <Image
                     src={doggoTwo}
                     alt='Doggo'
@@ -150,6 +152,25 @@ const Gallery = async () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
+
+                    <Button
+                        asChild
+                        className={cn(
+                            buttonVariants({
+                                variant: 'default',
+                                size: 'sm'
+                            }),
+                            'font-black',
+                            'hover:cursor-pointer'
+                        )}>
+                        <a
+                            href={process.env.APP_SOCIAL_INSTAGRAM!}
+                            title='Follow us on Instagram'
+                            target='_blank'
+                            rel='noopener noreferrer'>
+                            Follow us on Instagram
+                        </a>
+                    </Button>
                 </PageSection>
             </div>
 

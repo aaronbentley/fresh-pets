@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const Frontpage = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:dark:bg-opacity-60 after:backdrop-contrast-125 after:dark:backdrop-contrast-125'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150'>
                 <Image
                     src={oliverChiefPupper}
                     alt='Oliver the Chief Pupper'
@@ -43,7 +43,8 @@ const Frontpage = () => {
                         className='transition-all duration-200 w-min self-center sm:self-start bg-background text-brand font-black hover:bg-brand-dark hover:text-background'
                         asChild>
                         <a
-                            href='https://m.me/freshpetsiow'
+                            href={process.env.APP_SOCIAL_MESSENGER!}
+                            title='Make a Booking with Fresh pets'
                             rel='noopener noreferrer'
                             target='_blank'>
                             Make a Booking
@@ -85,7 +86,8 @@ const Frontpage = () => {
                                         variant: 'default',
                                         size: 'lg'
                                     }),
-                                    'w-min'
+                                    'w-min',
+                                    'font-black'
                                 )}>
                                 View Services
                             </Link>
@@ -148,7 +150,8 @@ const Frontpage = () => {
                                         variant: 'default',
                                         size: 'lg'
                                     }),
-                                    'w-min'
+                                    'w-min',
+                                    'font-black'
                                 )}>
                                 About Us
                             </Link>
@@ -189,7 +192,8 @@ const Frontpage = () => {
                                         variant: 'default',
                                         size: 'lg'
                                     }),
-                                    'w-min'
+                                    'w-min',
+                                    'font-black'
                                 )}>
                                 View Gallery
                             </Link>

@@ -6,6 +6,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: '*.cdninstagram.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'maps.googleapis.com'
             }
         ],
         formats: ['image/avif', 'image/webp']

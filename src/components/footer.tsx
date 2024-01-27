@@ -1,7 +1,13 @@
 import { legalLinks } from '@/assets/data/links'
 import { Copyright } from 'lucide-react'
 import Link from 'next/link'
-import { Facebook, Instagram, Twitter, WhatsApp } from './brand-icons'
+import {
+    Facebook,
+    Instagram,
+    Messenger,
+    Twitter,
+    WhatsApp
+} from './brand-icons'
 import { Mark } from './mark'
 import { Typography } from './typography'
 
@@ -37,6 +43,22 @@ const Footer = () => (
                             <Facebook className='size-6' />
                         </a>
                         <a
+                            title='Messenger'
+                            aria-label='Messenger'
+                            href={process.env.APP_SOCIAL_MESSENGER!}
+                            target='_blank'
+                            className='transition-all duration-200 cursor-pointer hover:scale-125'>
+                            <Messenger className='size-6' />
+                        </a>
+                        <a
+                            title='Instagram'
+                            aria-label='Instagram'
+                            href={process.env.APP_SOCIAL_INSTAGRAM!}
+                            target='_blank'
+                            className='transition-all duration-200 cursor-pointer hover:scale-125'>
+                            <Instagram className='size-6' />
+                        </a>
+                        <a
                             title='WhatsApp'
                             aria-label='WhatsApp'
                             href={process.env.APP_SOCIAL_WHATSAPP!}
@@ -51,14 +73,6 @@ const Footer = () => (
                             target='_blank'
                             className='transition-all duration-200 cursor-pointer hover:scale-125'>
                             <Twitter className='size-6' />
-                        </a>
-                        <a
-                            title='Instagram'
-                            aria-label='Instagram'
-                            href={process.env.APP_SOCIAL_INSTAGRAM!}
-                            target='_blank'
-                            className='transition-all duration-200 cursor-pointer hover:scale-125'>
-                            <Instagram className='size-6' />
                         </a>
                     </div>
                 </div>
