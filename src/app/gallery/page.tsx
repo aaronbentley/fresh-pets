@@ -1,5 +1,5 @@
 import doggoTwo from '@/assets/img/doggo-two.jpg'
-import { Instagram } from '@/components/brand-icons'
+import { Instagram } from '@/components/icons'
 import { GridLoader } from '@/components/loaders'
 import {
     PageHero,

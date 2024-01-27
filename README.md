@@ -6,11 +6,12 @@
 
 - [ ] Frontpage
 - [ ] Services
-- [ ] Gallery
-- [ ] About (include team)
-- [ ] FAQ
-- [ ] Privacy
-- [ ] Terms
+- [x] Gallery
+- [x] About
+- [x] FAQ
+- [ ] Contact
+- [x] Privacy
+- [x] Terms
 - [ ] Not found
 
 ### Content
@@ -22,4 +23,3 @@
 ### Features
 
 - [ ] Upgrade Firebase functions (v2)
-- [ ] Gallery - Instagram source - callable function

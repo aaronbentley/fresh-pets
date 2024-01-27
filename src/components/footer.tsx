@@ -1,13 +1,7 @@
 import { legalLinks } from '@/assets/data/links'
 import { Copyright } from 'lucide-react'
 import Link from 'next/link'
-import {
-    Facebook,
-    Instagram,
-    Messenger,
-    Twitter,
-    WhatsApp
-} from './brand-icons'
+import { Facebook, Instagram, Messenger, Twitter, WhatsApp } from './icons'
 import { Mark } from './mark'
 import { Typography } from './typography'
 
