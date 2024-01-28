@@ -1,5 +1,6 @@
 import doggoOne from '@/assets/img/doggo-one.jpg'
 import DynamicMap from '@/components/dynamic-map'
+import { Email, Messenger, Phone, WhatsApp } from '@/components/icons'
 import {
     PageHero,
     PageHeroDescription,
@@ -50,6 +51,72 @@ const Contact = () => {
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
                 </PageSection>
+
+                <div className='grid grid-cols-2 lg:grid-cols-4 max-w-[920px] mx-auto gap-6'>
+                    <a
+                        title={`Call ${process.env.APP_TITLE!}`}
+                        aria-label='Phone'
+                        href={`tel://${process.env.APP_CONTACT_PHONE!}`}
+                        target='_blank'
+                        className='cursor-pointer text-brand-dark dark:text-brand-light group'>
+                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                            <Phone className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                            <Typography
+                                muted
+                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                07801 255796
+                            </Typography>
+                        </div>
+                    </a>
+
+                    <a
+                        title={`Messenger ${process.env.APP_TITLE!}`}
+                        aria-label='Messenger'
+                        href={process.env.APP_SOCIAL_MESSENGER!}
+                        target='_blank'
+                        className='cursor-pointer text-brand-dark dark:text-brand-light group'>
+                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                            <Messenger className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                            <Typography
+                                muted
+                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                @freshpetsiow
+                            </Typography>
+                        </div>
+                    </a>
+
+                    <a
+                        title={`WhatsApp ${process.env.APP_TITLE!}`}
+                        aria-label='WhatsApp'
+                        href={process.env.APP_SOCIAL_WHATSAPP!}
+                        target='_blank'
+                        className='cursor-pointer text-brand-dark dark:text-brand-light group'>
+                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                            <WhatsApp className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                            <Typography
+                                muted
+                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                07801 255796
+                            </Typography>
+                        </div>
+                    </a>
+
+                    <a
+                        title={`Email ${process.env.APP_TITLE!}`}
+                        aria-label='Email'
+                        href={`mailto:${process.env.APP_CONTACT_EMAIL!}`}
+                        target='_blank'
+                        className='cursor-pointer text-brand-dark dark:text-brand-light group'>
+                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                            <Email className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                            <Typography
+                                muted
+                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                freshpets@icloud.com
+                            </Typography>
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <div className='container flex flex-col gap-6 py-20'>
@@ -60,11 +127,31 @@ const Contact = () => {
                     <Typography
                         variant='lead'
                         className='md:w-2/3 font-black'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec libero lectus, euismod sit amet vestibulum sed.
+                        [Parking details] - Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Donec libero lectus,
+                        euismod sit amet vestibulum sed.
                     </Typography>
 
-                    <DynamicMap />
+                    <div className='grid lg:grid-cols-3 w-full gap-12 py-12'>
+                        <div className='w-full lg:col-span-2'>
+                            <DynamicMap />
+                        </div>
+                        <div>
+                            <Typography variant='address'>
+                                <Typography variant='strong'>
+                                    {process.env.APP_TITLE!}
+                                </Typography>
+                                <br />
+                                25 Crocker Street
+                                <br />
+                                Newport
+                                <br />
+                                Isle of Wight
+                                <br />
+                                PO30 5DB
+                            </Typography>
+                        </div>
+                    </div>
                 </PageSection>
             </div>
         </>

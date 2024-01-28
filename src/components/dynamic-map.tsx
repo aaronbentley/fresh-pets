@@ -49,7 +49,7 @@ const DynamicMap = () => {
     const lng = parseFloat(process.env.NEXT_PUBLIC_APP_LOCATION_LONGITUDE!)
 
     return (
-        <div className='flex justify-center w-full py-12'>
+        <div className='flex justify-center w-full'>
             {!isLoaded ? (
                 <Skeleton className='rounded-lg shadow-md bg-brand-dark/50 dark:bg-brand-light/50 h-[400px] w-full' />
             ) : (
