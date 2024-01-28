@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         type: 'website',
         locale: 'en_US',
         siteName: process.env.APP_TITLE!,
-        title: `${process.env.APP_TITLE!} = Pet Grooming`,
+        title: `${process.env.APP_TITLE!} - Pet Grooming`,
         description: process.env.APP_STRAPLINE!
     },
     creator: process.env.APP_COMPANY!
