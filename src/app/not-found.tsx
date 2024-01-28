@@ -37,7 +37,7 @@ const NotFound = async () => (
                 </PageHeroDescription>
 
                 <Link
-                    href='/services/'
+                    href='/'
                     className={cn(
                         buttonVariants({
                             variant: 'default',
