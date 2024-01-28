@@ -144,7 +144,7 @@ const Gallery = async () => {
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
                     <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
-                        For the &apos;gram
+                        Woofin&apos; for the &apos;gram
                     </PageSectionHeading>
                     <Typography
                         variant='lead'

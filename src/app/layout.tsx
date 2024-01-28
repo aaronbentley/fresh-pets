@@ -34,6 +34,12 @@ export const metadata: Metadata = {
         template: `%s - ${process.env.APP_TITLE!}`
     },
     description: process.env.APP_STRAPLINE!,
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        siteName: process.env.APP_TITLE!
+        // url: process.env.APP_URL!,
+    },
     creator: process.env.APP_COMPANY!
 }
 
