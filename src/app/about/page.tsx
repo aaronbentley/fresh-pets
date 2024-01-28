@@ -31,11 +31,11 @@ const About = () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-sm'>
                         About us
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-sm'>
                         Friendly, knowledgeable staff for all your canine needs
                     </PageHeroDescription>
                 </PageHero>
@@ -48,7 +48,7 @@ const About = () => {
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         [Fresh Pets origin story here] - [Awards & Accolades] -
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
@@ -63,7 +63,7 @@ const About = () => {
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>

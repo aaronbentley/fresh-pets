@@ -2,14 +2,14 @@
 
 ## Content Todosies
 
-### Pages
+### Pages Dev
 
-- [ ] Frontpage
-- [ ] Services
+- [x] Frontpage
+- [x] Services
 - [x] Gallery
 - [x] About
 - [x] FAQ
-- [ ] Contact
+- [x] Contact
 - [x] Privacy
 - [x] Terms
 - [ ] Not found
@@ -18,7 +18,7 @@
 
 - [x] Header
 - [x] Footer
-- [ ] OG image & tags
+- [x] OG image & tags
 
 ### Features
 

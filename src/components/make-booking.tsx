@@ -35,7 +35,7 @@ const MakeBooking = ({
                         size: buttonSize
                     }),
                     [
-                        'font-black',
+                        'font-bold',
                         'bg-brand-dark',
                         'dark:bg-brand-light',
                         'text-background',
@@ -70,7 +70,7 @@ const MakeBooking = ({
                     </a>
                     <Typography
                         muted
-                        className='text-sm sm:text-base font-black'>
+                        className='text-sm sm:text-base font-bold'>
                         Phone
                     </Typography>
                 </div>
@@ -86,7 +86,7 @@ const MakeBooking = ({
                     </a>
                     <Typography
                         muted
-                        className='text-sm sm:text-base font-black'>
+                        className='text-sm sm:text-base font-bold'>
                         Messenger
                     </Typography>
                 </div>
@@ -102,7 +102,7 @@ const MakeBooking = ({
                     </a>
                     <Typography
                         muted
-                        className='text-sm sm:text-base font-black'>
+                        className='text-sm sm:text-base font-bold'>
                         WhatsApp
                     </Typography>
                 </div>
@@ -119,7 +119,7 @@ const MakeBooking = ({
                     </a>
                     <Typography
                         muted
-                        className='text-sm sm:text-base font-black'>
+                        className='text-sm sm:text-base font-bold'>
                         Email
                     </Typography>
                 </div>

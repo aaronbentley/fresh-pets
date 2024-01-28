@@ -27,11 +27,11 @@ const Privacy = () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-sm'>
                         Privacy
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-sm'>
                         Our Privacy Policy explains what personal information we
                         collect, how we use personal information and your
                         privacy rights

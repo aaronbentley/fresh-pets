@@ -34,7 +34,7 @@ export const PageHeroDescription = ({
         variant='lead'
         className={cn(
             [
-                'font-black',
+                'font-bold',
                 'text-balance',
                 'drop-shadow-sm',
                 'w-full',

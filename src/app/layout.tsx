@@ -37,10 +37,41 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        siteName: process.env.APP_TITLE!
-        // url: process.env.APP_URL!,
+        siteName: process.env.APP_TITLE!,
+        title: `${process.env.APP_TITLE!} = Pet Grooming`,
+        description: process.env.APP_STRAPLINE!
     },
     creator: process.env.APP_COMPANY!
+}
+
+// Compose JSON-LD structured data
+const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': 'https://www.fresh-pets.co.uk/#organization',
+    url: process.env.APP_URL!,
+    name: process.env.APP_TITLE!,
+    telephone: '+447801255796',
+    address: {
+        '@type': 'PostalAddress',
+        streetAddress: '25 Crocker Street',
+        addressLocality: 'Newport',
+        postalCode: 'PO30 5DB',
+        addressCountry: 'GB'
+    },
+    openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Saturday'],
+        opens: '09:00',
+        closes: '17:00'
+    },
+    sameAs: [
+        process.env.APP_SOCIAL_FACEBOOK!,
+        process.env.APP_SOCIAL_MESSENGER!,
+        process.env.APP_SOCIAL_INSTAGRAM!,
+        process.env.APP_SOCIAL_WHATSAPP!,
+        process.env.APP_SOCIAL_TWITTER!
+    ]
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -54,6 +85,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                     'min-h-screen bg-background font-sans antialiased',
                     fontSans.variable
                 )}>
+                <script
+                    type='application/ld+json'
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(structuredData)
+                    }}
+                />
                 <ThemeProvider
                     attribute='class'
                     defaultTheme='system'

@@ -92,7 +92,7 @@ const DynamicMap = () => {
                                     title='Get Directions to Fresh Pets'
                                     rel='noopener noreferrer'
                                     target='_blank'
-                                    className='text-brand dark:text-brand font-black hover:text-brand-dark hover:dark:text-brand-light'>
+                                    className='text-brand dark:text-brand font-bold hover:text-brand-dark hover:dark:text-brand-light'>
                                     Get Directions
                                 </a>
                             </div>

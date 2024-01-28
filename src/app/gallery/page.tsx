@@ -131,11 +131,11 @@ const Gallery = async () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-sm'>
                         Pupper Gallery
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-sm'>
                         Fur-ever fabulous, ready for a night on the town
                     </PageHeroDescription>
                 </PageHero>
@@ -148,7 +148,7 @@ const Gallery = async () => {
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
@@ -160,7 +160,7 @@ const Gallery = async () => {
                                 variant: 'default',
                                 size: 'sm'
                             }),
-                            'font-black',
+                            'font-bold',
                             'hover:cursor-pointer'
                         )}>
                         <a

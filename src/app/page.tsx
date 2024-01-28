@@ -41,7 +41,7 @@ const Frontpage = () => {
                     <MakeBooking
                         buttonSize='lg'
                         buttonVariant='default'
-                        buttonClassName='transition-all duration-200 w-min self-center sm:self-start bg-background dark:bg-background text-brand font-black hover:bg-brand-dark hover:text-background'
+                        buttonClassName='transition-all duration-200 w-min self-center sm:self-start bg-background dark:bg-background text-brand font-bold hover:bg-brand-dark hover:text-background'
                     />
                 </Hero>
             </div>
@@ -80,7 +80,7 @@ const Frontpage = () => {
                                         size: 'lg'
                                     }),
                                     'w-min',
-                                    'font-black'
+                                    'font-bold'
                                 )}>
                                 View Services
                             </Link>
@@ -144,7 +144,7 @@ const Frontpage = () => {
                                         size: 'lg'
                                     }),
                                     'w-min',
-                                    'font-black'
+                                    'font-bold'
                                 )}>
                                 About Us
                             </Link>
@@ -186,7 +186,7 @@ const Frontpage = () => {
                                         size: 'lg'
                                     }),
                                     'w-min',
-                                    'font-black'
+                                    'font-bold'
                                 )}>
                                 View Gallery
                             </Link>

@@ -12,7 +12,7 @@ import { cn } from '@/lib/utils'
 
 const headingBaseClasses = [
     'text-balance',
-    'font-black',
+    'font-bold',
     'tracking-tight',
     'lg:tracking-[-0.035em]'
 ]

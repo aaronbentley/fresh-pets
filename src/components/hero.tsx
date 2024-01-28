@@ -25,7 +25,7 @@ export const HeroHeading = ({
             [
                 'text-center',
                 'sm:text-start',
-                'font-black',
+                'font-bold',
                 'capitalize',
                 'drop-shadow-sm',
                 'text-5xl',
@@ -50,7 +50,7 @@ export const HeroDescription = ({
             [
                 'text-center',
                 'sm:text-start',
-                'font-black',
+                'font-bold',
                 'text-balance',
                 'drop-shadow-sm',
                 'w-full',

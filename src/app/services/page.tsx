@@ -27,11 +27,11 @@ const Services = () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-sm'>
                         Top to Tail Services
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-sm'>
                         Bark, Bath, Bliss: Elevate your dog&apos;s grooming
                         experience
                     </PageHeroDescription>
@@ -45,14 +45,14 @@ const Services = () => {
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         We offer a wide range of services to keep your dog
                         looking and feeling their best, from a simple bath and
                         brush to a full groom.
                     </Typography>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         We want your dog to look fabulous - therefore all pets
                         require bathing before any clipping and trimming, with
                         the exception of Hand Stripping and While You Wait

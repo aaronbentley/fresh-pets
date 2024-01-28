@@ -29,11 +29,11 @@ const Contact = () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-sm'>
                         Contact us
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-sm'>
                         We&apos;d love to hear from you
                     </PageHeroDescription>
                 </PageHero>
@@ -46,7 +46,7 @@ const Contact = () => {
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
@@ -63,7 +63,7 @@ const Contact = () => {
                             <Phone className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                className='text-sm sm:text-base font-bold group-hover:text-brand-dark hover:dark:text-brand-light'>
                                 07801 255796
                             </Typography>
                         </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                             <Messenger className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                className='text-sm sm:text-base font-bold group-hover:text-brand-dark hover:dark:text-brand-light'>
                                 @freshpetsiow
                             </Typography>
                         </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                             <WhatsApp className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                className='text-sm sm:text-base font-bold group-hover:text-brand-dark hover:dark:text-brand-light'>
                                 07801 255796
                             </Typography>
                         </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                             <Email className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-black group-hover:text-brand-dark hover:dark:text-brand-light'>
+                                className='text-sm sm:text-base font-bold group-hover:text-brand-dark hover:dark:text-brand-light'>
                                 freshpets@icloud.com
                             </Typography>
                         </div>
@@ -126,7 +126,7 @@ const Contact = () => {
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         [Parking details] - Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Donec libero lectus,
                         euismod sit amet vestibulum sed.

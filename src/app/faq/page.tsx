@@ -33,11 +33,11 @@ const Faq = () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-sm'>
                         FAQ
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-stone-50 dark:text-stone-950 drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-sm'>
                         Get answers to your most frequently asked questions
                     </PageHeroDescription>
                 </PageHero>
@@ -50,7 +50,7 @@ const Faq = () => {
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-black'>
+                        className='md:w-2/3 font-bold'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
@@ -63,7 +63,7 @@ const Faq = () => {
                     className='w-full'
                     collapsible>
                     <AccordionItem value='item-1'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             How long will the groom take?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -76,7 +76,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-2'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             Do you have a mild shampoo for itchy skin?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -89,7 +89,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-3'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             Can I stay with my dog whilst being groomed?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -111,7 +111,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-4'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             My dog is knotty, will this cost extra?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -126,7 +126,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-5'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             Do you offer a dry clip service?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -137,7 +137,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-6'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             Do you offer an ear plucking service?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -150,7 +150,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-7'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             Do you do anal gland expression?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -177,7 +177,7 @@ const Faq = () => {
                     </AccordionItem>
 
                     <AccordionItem value='item-8'>
-                        <AccordionTrigger className='text-xl font-black text-start'>
+                        <AccordionTrigger className='text-xl font-bold text-start'>
                             What type of payment do you accept?
                         </AccordionTrigger>
                         <AccordionContent asChild>
