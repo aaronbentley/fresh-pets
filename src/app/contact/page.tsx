@@ -59,7 +59,7 @@ const Contact = () => {
                         href={`tel://${process.env.APP_CONTACT_PHONE!}`}
                         target='_blank'
                         className='cursor-pointer text-brand-dark dark:text-brand-light group'>
-                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
                             <Phone className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
@@ -75,7 +75,7 @@ const Contact = () => {
                         href={process.env.APP_SOCIAL_MESSENGER!}
                         target='_blank'
                         className='cursor-pointer text-brand-dark dark:text-brand-light group'>
-                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
                             <Messenger className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
@@ -91,7 +91,7 @@ const Contact = () => {
                         href={process.env.APP_SOCIAL_WHATSAPP!}
                         target='_blank'
                         className='cursor-pointer text-brand-dark dark:text-brand-light group'>
-                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
                             <WhatsApp className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
@@ -107,7 +107,7 @@ const Contact = () => {
                         href={`mailto:${process.env.APP_CONTACT_EMAIL!}`}
                         target='_blank'
                         className='cursor-pointer text-brand-dark dark:text-brand-light group'>
-                        <div className='flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
+                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand-dark/20 hover:dark:bg-brand-light/20 p-8 lg:p-12 rounded-lg'>
                             <Email className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
                             <Typography
                                 muted
