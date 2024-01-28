@@ -9,7 +9,7 @@ import { buttonVariants } from './ui/button'
 
 const Header = () => (
     <header className='sticky top-0 z-50 w-full border-b border-stone-200 dark:border-stone-800 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur'>
-        <div className='container flex items-center'>
+        <div className='px-4 sm:container flex items-center'>
             <div className='flex justify-between w-full py-4'>
                 <div className='flex flex-row-reverse lg:flex-row items-center md:space-x-4'>
                     <Mark className='hidden lg:flex size-6 fill-brand-dark dark:fill-brand-light' />
@@ -35,9 +35,9 @@ const Header = () => (
                     <MainNav />
                     <MobileNav />
                 </div>
-                <div className='flex items-center gap-4'>
+                <div className='flex items-center gap-2 md:gap-4'>
                     <ModeToggle />
-                    <MakeBooking />
+                    <MakeBooking buttonClassName='md:h-10 md:px-4 md:py-2' />
                 </div>
             </div>
         </div>

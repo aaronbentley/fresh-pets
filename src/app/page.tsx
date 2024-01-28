@@ -3,8 +3,9 @@ import doggoOne from '@/assets/img/doggo-one.jpg'
 import doggoSix from '@/assets/img/doggo-six.jpg'
 import oliverChiefPupper from '@/assets/img/oliver.jpg'
 import { Hero, HeroDescription, HeroHeading } from '@/components/hero'
+import MakeBooking from '@/components/make-booking'
 import { Typography } from '@/components/typography'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -37,19 +38,11 @@ const Frontpage = () => {
                         {process.env.APP_DESCRIPTION!}
                     </HeroDescription>
 
-                    <Button
-                        variant='default'
-                        size='lg'
-                        className='transition-all duration-200 w-min self-center sm:self-start bg-background text-brand font-black hover:bg-brand-dark hover:text-background'
-                        asChild>
-                        <a
-                            href={process.env.APP_SOCIAL_MESSENGER!}
-                            title='Make a Booking with Fresh pets'
-                            rel='noopener noreferrer'
-                            target='_blank'>
-                            Make a Booking
-                        </a>
-                    </Button>
+                    <MakeBooking
+                        buttonSize='lg'
+                        buttonVariant='default'
+                        buttonClassName='transition-all duration-200 w-min self-center sm:self-start bg-background dark:bg-background text-brand font-black hover:bg-brand-dark hover:text-background'
+                    />
                 </Hero>
             </div>
 
