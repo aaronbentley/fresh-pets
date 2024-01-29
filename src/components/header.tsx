@@ -5,7 +5,7 @@ import MakeBooking from './make-booking'
 import { Mark } from './mark'
 import MobileNav from './mobile-nav'
 import ModeToggle from './mode-toggle'
-import { buttonVariants } from './ui/button'
+import { Button, buttonVariants } from './ui/button'
 
 const Header = () => (
     <header className='sticky top-0 z-50 w-full border-b border-stone-200 dark:border-stone-800 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur'>
@@ -18,7 +18,7 @@ const Header = () => (
                         className={cn(buttonVariants({ variant: 'ghost' }), [
                             'md:mr-6',
                             'font-sans',
-                            'font-extrabold',
+                            'font-bold',
                             'text-xl',
                             'tracking-tight',
                             'transition-all',
@@ -37,7 +37,29 @@ const Header = () => (
                 </div>
                 <div className='flex items-center gap-2 md:gap-4'>
                     <ModeToggle />
-                    <MakeBooking buttonClassName='md:h-10 md:px-4 md:py-2' />
+                    <MakeBooking>
+                        <Button
+                            className={cn(
+                                buttonVariants({
+                                    variant: 'default',
+                                    size: 'sm'
+                                }),
+                                [
+                                    'font-bold',
+                                    'bg-brand-dark',
+                                    'dark:bg-brand-light',
+                                    'text-background',
+                                    'hover:bg-brand',
+                                    'dark:hover:bg-brand',
+                                    'hover:cursor-pointer',
+                                    'md:h-10',
+                                    'md:px-4',
+                                    'md:py-2'
+                                ]
+                            )}>
+                            Make a Booking
+                        </Button>
+                    </MakeBooking>
                 </div>
             </div>
         </div>

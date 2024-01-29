@@ -6,48 +6,12 @@ import {
     DialogTitle,
     DialogTrigger
 } from '@/components/ui/dialog'
-import { cn } from '@/lib/utils'
 import { Email, Messenger, Phone, WhatsApp } from './icons'
 import { Typography } from './typography'
-import { Button, buttonVariants } from './ui/button'
 
-const MakeBooking = ({
-    buttonSize = 'sm',
-    buttonVariant = 'default',
-    buttonClassName = ''
-}: {
-    buttonSize?: 'sm' | 'default' | 'lg' | 'icon'
-    buttonVariant?:
-        | 'default'
-        | 'destructive'
-        | 'outline'
-        | 'secondary'
-        | 'ghost'
-        | 'link'
-    buttonClassName?: string
-}) => (
+const MakeBooking = ({ children }: { children: React.ReactNode }) => (
     <Dialog>
-        <DialogTrigger asChild>
-            <Button
-                className={cn(
-                    buttonVariants({
-                        variant: buttonVariant,
-                        size: buttonSize
-                    }),
-                    [
-                        'font-bold',
-                        'bg-brand-dark',
-                        'dark:bg-brand-light',
-                        'text-background',
-                        'hover:bg-brand',
-                        'dark:hover:bg-brand',
-                        'hover:cursor-pointer'
-                    ],
-                    buttonClassName
-                )}>
-                Make a Booking
-            </Button>
-        </DialogTrigger>
+        <DialogTrigger asChild>{children}</DialogTrigger>
         <DialogContent>
             <DialogHeader>
                 <DialogTitle asChild>

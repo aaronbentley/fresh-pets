@@ -67,9 +67,7 @@ const structuredData = {
     },
     sameAs: [
         process.env.APP_SOCIAL_FACEBOOK!,
-        process.env.APP_SOCIAL_MESSENGER!,
         process.env.APP_SOCIAL_INSTAGRAM!,
-        process.env.APP_SOCIAL_WHATSAPP!,
         process.env.APP_SOCIAL_TWITTER!
     ]
 }

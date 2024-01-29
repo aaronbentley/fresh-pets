@@ -38,7 +38,7 @@ const MobileNav = () => {
                         className={cn(buttonVariants({ variant: 'ghost' }), [
                             'md:mr-6',
                             'font-sans',
-                            'font-extrabold',
+                            'font-bold',
                             'text-xl',
                             'tracking-tight',
                             'transition-all',

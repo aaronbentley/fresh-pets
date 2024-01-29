@@ -5,7 +5,7 @@ import oliverChiefPupper from '@/assets/img/oliver.jpg'
 import { Hero, HeroDescription, HeroHeading } from '@/components/hero'
 import MakeBooking from '@/components/make-booking'
 import { Typography } from '@/components/typography'
-import { buttonVariants } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -38,11 +38,31 @@ const Frontpage = () => {
                         {process.env.APP_DESCRIPTION!}
                     </HeroDescription>
 
-                    <MakeBooking
-                        buttonSize='lg'
-                        buttonVariant='default'
-                        buttonClassName='transition-all duration-200 w-min self-center sm:self-start bg-background dark:bg-background text-brand font-bold hover:bg-brand-dark hover:text-background'
-                    />
+                    <MakeBooking>
+                        <Button
+                            className={cn(
+                                buttonVariants({
+                                    variant: 'default',
+                                    size: 'lg'
+                                }),
+                                [
+                                    // 'transition-all',
+                                    // 'duration-200',
+                                    'w-min',
+                                    'self-center',
+                                    'sm:self-start',
+                                    'bg-background',
+                                    'dark:bg-background',
+                                    'text-brand',
+                                    'font-bold',
+                                    'hover:bg-brand-dark',
+                                    'hover:text-background',
+                                    'hover:dark:bg-brand-light'
+                                ]
+                            )}>
+                            Make a Booking
+                        </Button>
+                    </MakeBooking>
                 </Hero>
             </div>
 
