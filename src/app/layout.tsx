@@ -2,7 +2,6 @@ import '@/assets/styles/globals.css'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import TailwindIndicator from '@/components/tailwind-indicator'
-import ThemeProvider from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
 import type { Metadata, Viewport } from 'next'
 import { Comfortaa as FontSans } from 'next/font/google'
@@ -17,11 +16,7 @@ const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' })
  * Generate viewport
  */
 export const generateViewport = (): Viewport => ({
-    // themeColor: '#00A29E'
-    themeColor: [
-        { media: '(prefers-color-scheme: light)', color: '#008985' },
-        { media: '(prefers-color-scheme: dark)', color: '#00bbb7' }
-    ]
+    themeColor: '#00A29E'
 })
 
 /**
@@ -89,20 +84,14 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                         __html: JSON.stringify(structuredData)
                     }}
                 />
-                <ThemeProvider
-                    attribute='class'
-                    defaultTheme='system'
-                    enableSystem
-                    disableTransitionOnChange={true}>
-                    <div className='relative flex min-h-screen flex-col'>
-                        <Header />
-                        <div className='flex-1 flex min-h-max flex-col items-center justify-start gap-y-4 md:gap-y-12'>
-                            <Suspense>{children}</Suspense>
-                        </div>
-                        <Footer />
+                <div className='relative flex min-h-screen flex-col'>
+                    <Header />
+                    <div className='flex-1 flex min-h-max flex-col items-center justify-start gap-y-4 md:gap-y-12'>
+                        <Suspense>{children}</Suspense>
                     </div>
-                    <TailwindIndicator />
-                </ThemeProvider>
+                    <Footer />
+                </div>
+                <TailwindIndicator />
             </body>
         </html>
     )

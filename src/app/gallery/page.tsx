@@ -94,7 +94,7 @@ const InstagramGallery = async () => {
                                 priority={index <= 6 ? true : false}
                                 fill={true}
                                 sizes='(max-width: 768px) 100vw, (min-width: 769px) 33vw'
-                                className='w-full object-center object-cover  group-hover:scale-105 transition-transform duration-200 ease-in-out bg-brand-dark/50 dark:bg-brand-light/50'
+                                className='w-full object-center object-cover  group-hover:scale-105 transition-transform duration-200 ease-in-out bg-brand/50'
                             />
 
                             <div className='absolute bottom-4 right-4 z-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out'>
@@ -103,7 +103,7 @@ const InstagramGallery = async () => {
                                     title='View on Instagram'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='p-2 rounded-xl bg-brand-dark dark:bg-brand-light bg-opacity-60 dark:bg-opacity-60 backdrop-contrast-125 dark:backdrop-contrast-125 transition-colors duration-200 ease-in-out'>
+                                    className='p-2 rounded-xl bg-brand bg-opacity-60 backdrop-contrast-125 transition-colors duration-200 ease-in-out'>
                                     <Instagram className='size-6 stroke-background' />
                                 </a>
                             </div>
@@ -120,7 +120,7 @@ const InstagramGallery = async () => {
 const Gallery = async () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-96'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
                 <Image
                     src={doggoTwo}
                     alt='Doggo'
@@ -143,7 +143,7 @@ const Gallery = async () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                    <PageSectionHeading className='text-brand'>
                         Woofin&apos; for the &apos;gram
                     </PageSectionHeading>
                     <Typography

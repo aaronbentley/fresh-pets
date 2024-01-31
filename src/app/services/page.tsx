@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const Services = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-96'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
                 <Image
                     src={doggoThree}
                     alt='Doggo'
@@ -40,7 +40,7 @@ const Services = () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                    <PageSectionHeading className='text-brand'>
                         Treatments
                     </PageSectionHeading>
                     <Typography
@@ -61,14 +61,14 @@ const Services = () => {
                 </PageSection>
             </div>
 
-            <div className='grid grid-cols-1 divide-y divide-brand-dark/20 dark:divide-brand-light/20 px-8'>
+            <div className='grid grid-cols-1 divide-y divide-brand/20 px-8'>
                 <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand-dark/50 dark:bg-brand-light/50 md:col-span-3'></div>
+                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
 
                     <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
                         <Typography
                             variant='h3'
-                            className='text-brand-dark dark:text-brand-light'>
+                            className='text-brand'>
                             Hand Stripping
                         </Typography>
                         <Typography variant='p'>
@@ -94,11 +94,11 @@ const Services = () => {
                 </div>
 
                 <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand-dark/50 dark:bg-brand-light/50 md:col-span-3'></div>
+                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
                     <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
                         <Typography
                             variant='h3'
-                            className='text-brand-dark dark:text-brand-light'>
+                            className='text-brand'>
                             Full Groom
                         </Typography>
                         <Typography variant='p'>
@@ -115,11 +115,11 @@ const Services = () => {
                 </div>
 
                 <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand-dark/50 dark:bg-brand-light/50 md:col-span-3'></div>
+                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
                     <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
                         <Typography
                             variant='h3'
-                            className='text-brand-dark dark:text-brand-light'>
+                            className='text-brand'>
                             Puppy Groom
                         </Typography>
                         <Typography as='p'>
@@ -136,11 +136,11 @@ const Services = () => {
                 </div>
 
                 <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand-dark/50 dark:bg-brand-light/50 md:col-span-3'></div>
+                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
                     <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
                         <Typography
                             variant='h3'
-                            className='text-brand-dark dark:text-brand-light'>
+                            className='text-brand'>
                             Bath and Brush
                         </Typography>
                         <Typography as='p'>
@@ -162,11 +162,11 @@ const Services = () => {
                 </div>
 
                 <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand-dark/50 dark:bg-brand-light/50 md:col-span-3'></div>
+                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
                     <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
                         <Typography
                             variant='h3'
-                            className='text-brand-dark dark:text-brand-light'>
+                            className='text-brand'>
                             Teeth Cleaning
                         </Typography>
                         <Typography as='p'>
@@ -184,11 +184,11 @@ const Services = () => {
                 </div>
 
                 <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand-dark/50 dark:bg-brand-light/50 md:col-span-3'></div>
+                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
                     <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
                         <Typography
                             variant='h3'
-                            className='text-brand-dark dark:text-brand-light'>
+                            className='text-brand'>
                             While You Wait
                         </Typography>
                         <Typography as='p'>

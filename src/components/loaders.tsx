@@ -20,7 +20,7 @@ export const GridLoader = ({
         {Array.from({ length: items }).map((_, index) => (
             <Skeleton
                 key={index}
-                className='aspect-square rounded-lg shadow-md bg-brand-dark/50 dark:bg-brand-light/50'
+                className='aspect-square rounded-lg shadow-md bg-brand/50'
             />
         ))}
     </div>

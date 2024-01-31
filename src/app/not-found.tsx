@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const NotFound = async () => (
     <>
-        <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-screen'>
+        <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-screen'>
             <Image
                 src={doggoSeven}
                 alt='Doggo'

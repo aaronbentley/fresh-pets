@@ -43,10 +43,7 @@ export const PageSectionDescription = ({
     return (
         <Typography
             as='p'
-            className={cn(
-                ['text-neutral-500', 'dark:text-neutral-500', 'text-pretty'],
-                className
-            )}
+            className={cn(['text-stone-600', 'text-pretty'], className)}
             {...props}
         />
     )

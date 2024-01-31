@@ -29,7 +29,7 @@ const MakeBooking = ({ children }: { children: React.ReactNode }) => (
                         aria-label='Phone'
                         href={`tel://${process.env.APP_CONTACT_PHONE!}`}
                         target='_blank'
-                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand-dark dark:text-brand-light'>
+                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand'>
                         <Phone className='size-6 sm:size-7 md:size-8' />
                     </a>
                     <Typography
@@ -45,7 +45,7 @@ const MakeBooking = ({ children }: { children: React.ReactNode }) => (
                         aria-label='Messenger'
                         href={process.env.APP_SOCIAL_MESSENGER!}
                         target='_blank'
-                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand-dark dark:text-brand-light'>
+                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand'>
                         <Messenger className='size-6 sm:size-7 md:size-8' />
                     </a>
                     <Typography
@@ -61,7 +61,7 @@ const MakeBooking = ({ children }: { children: React.ReactNode }) => (
                         aria-label='WhatsApp'
                         href={process.env.APP_SOCIAL_WHATSAPP!}
                         target='_blank'
-                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand-dark dark:text-brand-light'>
+                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand'>
                         <WhatsApp className='size-6 sm:size-7 md:size-8' />
                     </a>
                     <Typography
@@ -78,7 +78,7 @@ const MakeBooking = ({ children }: { children: React.ReactNode }) => (
                         href={`mailto:${process.env
                             .APP_CONTACT_EMAIL!}?subject=Booking%20appointment%20with%20Fresh%20Pets`}
                         target='_blank'
-                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand-dark dark:text-brand-light'>
+                        className='transition-all duration-200 cursor-pointer group-hover:scale-125 text-brand'>
                         <Email className='size-6 sm:size-7 md:size-8' />
                     </a>
                     <Typography

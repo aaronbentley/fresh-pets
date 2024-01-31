@@ -1458,12 +1458,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.11.9":
-  version: 20.11.9
-  resolution: "@types/node@npm:20.11.9"
+"@types/node@npm:^20.11.13":
+  version: 20.11.13
+  resolution: "@types/node@npm:20.11.13"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 72f32aa56e97863d0bfee0274ce450245c2e159104a15f0fb3ee389962dfec34de284a679323161f8cf6cdaae9141043e370571988215b94e653a40f9b60078a
+  checksum: 8ff8526fa0dbabcf4e9c538c6a7220675f750c39d0794e34998daa0656d7e0dfdf3e47403d2ab8beb756422a517e1f2646b4494afa59ef330495d65fc58fa4d8
   languageName: node
   linkType: hard
 
@@ -3051,7 +3051,7 @@ __metadata:
     "@radix-ui/react-separator": "npm:^1.0.3"
     "@radix-ui/react-slot": "npm:^1.0.2"
     "@react-google-maps/api": "npm:^2.19.2"
-    "@types/node": "npm:^20.11.9"
+    "@types/node": "npm:^20.11.13"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     autoprefixer: "npm:^10.4.17"
@@ -3060,7 +3060,7 @@ __metadata:
     eslint: "npm:^8.56.0"
     eslint-config-next: "npm:14.1.0"
     firebase-admin: "npm:^12.0.0"
-    lucide-react: "npm:^0.316.0"
+    lucide-react: "npm:^0.320.0"
     next: "npm:^14.1.1-canary.17"
     next-themes: "npm:^0.2.1"
     postcss: "npm:^8.4.33"
@@ -4211,12 +4211,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.316.0":
-  version: 0.316.0
-  resolution: "lucide-react@npm:0.316.0"
+"lucide-react@npm:^0.320.0":
+  version: 0.320.0
+  resolution: "lucide-react@npm:0.320.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: e1f90af4c62042a99fba873422e9e1538afc48e81d242ffd1cbc2b9d6e0257f153201370f8ae8c08ec6b95214c78c17a6c1b7e8f6cb3bce8f1dae9509f866b6f
+  checksum: fe9ebbd346bf87cdca31b5b98a50e199ef9b162a68e13e8c542757e57dd322054359ea6071ea1428d206c361934ee72b34ca5cb7bb40247cfa4c1a9702dd7d5b
   languageName: node
   linkType: hard
 

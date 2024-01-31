@@ -43,12 +43,9 @@ const MobileNav = () => {
                             'tracking-tight',
                             'transition-all',
                             'duration-200',
-                            'text-brand-dark',
-                            'dark:text-brand-light',
-                            'hover:bg-brand-dark/20',
-                            'hover:text-brand-dark',
-                            'dark:hover:bg-brand-light/20',
-                            'hover:dark:text-brand-light'
+                            'text-brand',
+                            'hover:bg-brand/20',
+                            'hover:text-brand'
                         ])}>
                         {process.env.NEXT_PUBLIC_APP_TITLE!}
                     </Link>
@@ -101,7 +98,7 @@ const MobileLink = ({
             className={cn(
                 navigationMenuTriggerStyle(),
                 'font-bold',
-                active && ['text-background', 'bg-brand', 'dark:bg-brand'],
+                active && ['text-background', 'bg-brand'],
                 className
             )}
             {...props}>

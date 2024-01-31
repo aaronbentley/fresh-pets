@@ -51,7 +51,7 @@ const DynamicMap = () => {
     return (
         <div className='flex justify-center w-full'>
             {!isLoaded ? (
-                <Skeleton className='rounded-lg shadow-md bg-brand-dark/50 dark:bg-brand-light/50 h-[400px] w-full' />
+                <Skeleton className='rounded-lg shadow-md bg-brand/50 h-[400px] w-full' />
             ) : (
                 <div className='h-[400px] w-full rounded-lg shadow-md overflow-hidden'>
                     <GoogleMap
@@ -79,11 +79,10 @@ const DynamicMap = () => {
                                 pixelOffset: new google.maps.Size(0, -28)
                             }}>
                             <div className='flex flex-col items-center gap-2 w-24'>
-                                <Mark className='h-6 w-6 text-brand-dark dark:text-brand-light' />
+                                <Mark className='h-6 w-6 text-brand' />
                                 <Typography
                                     variant='h6'
-                                    as='p'
-                                    className='dark:text-background'>
+                                    as='p'>
                                     Fresh Pets
                                 </Typography>
 
@@ -92,7 +91,7 @@ const DynamicMap = () => {
                                     title='Get Directions to Fresh Pets'
                                     rel='noopener noreferrer'
                                     target='_blank'
-                                    className='text-brand dark:text-brand font-bold hover:text-brand-dark hover:dark:text-brand-light'>
+                                    className='text-brand font-bold hover:text-brand-dark'>
                                     Get Directions
                                 </a>
                             </div>

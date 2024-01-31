@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const Frontpage = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={oliverChiefPupper}
                     alt='Oliver the Chief Pupper'
@@ -46,18 +46,14 @@ const Frontpage = () => {
                                     size: 'lg'
                                 }),
                                 [
-                                    // 'transition-all',
-                                    // 'duration-200',
                                     'w-min',
                                     'self-center',
                                     'sm:self-start',
                                     'bg-background',
-                                    'dark:bg-background',
                                     'text-brand',
                                     'font-bold',
-                                    'hover:bg-brand-dark',
-                                    'hover:text-background',
-                                    'hover:dark:bg-brand-light'
+                                    'hover:bg-brand',
+                                    'hover:text-background'
                                 ]
                             )}>
                             Make a Booking
@@ -72,7 +68,7 @@ const Frontpage = () => {
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
-                                className='text-brand-dark dark:text-brand-light'>
+                                className='text-brand'>
                                 Top to Tail Services
                             </Typography>
                             <Typography
@@ -137,7 +133,7 @@ const Frontpage = () => {
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
-                                className='text-brand-dark dark:text-brand-light'>
+                                className='text-brand'>
                                 Pampering Paws
                             </Typography>
                             <Typography
@@ -179,7 +175,7 @@ const Frontpage = () => {
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
-                                className='text-brand-dark dark:text-brand-light'>
+                                className='text-brand'>
                                 Fur-ever Fabulous
                             </Typography>
                             <Typography

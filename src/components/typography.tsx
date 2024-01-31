@@ -75,7 +75,7 @@ const typographyVariants = cva(['text-lg'], {
             address: 'text-base !not-italic'
         },
         muted: {
-            true: 'text-stone-600 dark:text-stone-400'
+            true: 'text-stone-600'
         }
     },
     defaultVariants: {

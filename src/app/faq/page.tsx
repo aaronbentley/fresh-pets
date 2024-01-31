@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const Faq = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-96'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
                 <Image
                     src={doggoFour}
                     alt='Doggo'
@@ -45,7 +45,7 @@ const Faq = () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                    <PageSectionHeading className='text-brand'>
                         Here to help you
                     </PageSectionHeading>
                     <Typography
@@ -165,7 +165,7 @@ const Faq = () => {
                                     href='https://www.rcvs.org.uk/'
                                     title='Visit Royal College
                                 of Veterinary Surgeons website'
-                                    className='text-brand-dark dark:text-brand-light underline-offset-2  hover:underline'
+                                    className='text-brand underline-offset-2  hover:underline'
                                     target='_blank'>
                                     RCVS (Royal College of Veterinary Surgeons)
                                 </a>{' '}

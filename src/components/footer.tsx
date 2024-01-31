@@ -8,9 +8,9 @@ import { Typography } from './typography'
 const Footer = () => (
     <>
         <div className='flex justify-center items-center mt-16 md:mt-32 lg:mt-48'>
-            <Mark className='size-24 sm:size-32 md:size-40 fill-brand-dark dark:fill-brand-light -mb-1 sm:-mb-2' />
+            <Mark className='size-24 sm:size-32 md:size-40 fill-brand -mb-1 sm:-mb-2' />
         </div>
-        <footer className='pb-6 pt-12  md:pb-4 bg-brand-dark dark:bg-brand-light flex flex-col gap-12'>
+        <footer className='pb-6 pt-12  md:pb-4 bg-brand flex flex-col gap-12'>
             <div className='container flex flex-col items-center md:items-end justify-between gap-4 py-4 md:flex-row'>
                 <div className='flex items-center gap-x-2 order-2 md:order-1 text-background'>
                     <Copyright className='w-3 h-3' />

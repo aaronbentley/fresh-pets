@@ -32,9 +32,7 @@ const MainNav = () => {
                                         [
                                             'font-bold',
                                             'data-[active]:text-background',
-                                            'dark:data-[active]:text-background',
-                                            'data-[active]:bg-brand-dark',
-                                            'dark:data-[active]:bg-brand-light'
+                                            'data-[active]:bg-brand'
                                         ]
                                     )}>
                                     {link.label}

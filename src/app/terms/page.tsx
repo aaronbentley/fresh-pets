@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const Terms = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand-dark after:dark:bg-brand-light after:bg-opacity-60 after:bg-opacity-70 after:dark:bg-opacity-70 after:backdrop-contrast-150 after:dark:backdrop-contrast-150 h-96'>
+            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
                 <Image
                     src={doggoOne}
                     alt='Doggo'
@@ -40,7 +40,7 @@ const Terms = () => {
 
             <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand-dark dark:text-brand-light'>
+                    <PageSectionHeading className='text-brand'>
                         Service Terms and Conditions
                     </PageSectionHeading>
                     <Typography
