@@ -149,33 +149,6 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value='item-7'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
-                            Do you do anal gland expression?
-                        </AccordionTrigger>
-                        <AccordionContent asChild>
-                            <Typography
-                                variant='p'
-                                className='mb-6'>
-                                We do not offer this service.
-                            </Typography>
-                            <Typography variant='p'>
-                                It has been advised by the{' '}
-                                <a
-                                    href='https://www.rcvs.org.uk/'
-                                    title='Visit Royal College
-                                of Veterinary Surgeons website'
-                                    className='text-brand underline-offset-2  hover:underline'
-                                    target='_blank'>
-                                    RCVS (Royal College of Veterinary Surgeons)
-                                </a>{' '}
-                                that it is considered an invasive treatment and
-                                should be carried out by a vet. We can check and
-                                advise you on whether they require expression.
-                            </Typography>
-                        </AccordionContent>
-                    </AccordionItem>
-
                     <AccordionItem value='item-8'>
                         <AccordionTrigger className='text-xl font-bold text-start'>
                             What type of payment do you accept?
