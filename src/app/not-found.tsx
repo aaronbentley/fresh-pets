@@ -47,7 +47,7 @@ const NotFound = async () => (
                         'font-bold',
                         'my-8'
                     )}>
-                    Head home
+                    Homeward bound
                 </Link>
             </PageHero>
         </div>
