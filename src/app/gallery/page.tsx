@@ -94,7 +94,7 @@ const InstagramGallery = async () => {
                                 priority={index <= 6 ? true : false}
                                 fill={true}
                                 sizes='(max-width: 768px) 100vw, (min-width: 769px) 33vw'
-                                className='w-full object-center object-cover  group-hover:scale-105 transition-transform duration-200 ease-in-out bg-brand/50'
+                                className='w-full object-center object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out bg-brand/50'
                             />
 
                             <div className='absolute bottom-4 right-4 z-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out'>
