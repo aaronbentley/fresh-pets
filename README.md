@@ -12,14 +12,10 @@
 - [x] Contact
 - [x] Privacy
 - [x] Terms
-- [ ] Not found
+- [x] Not found
 
 ### Content
 
 - [x] Header
 - [x] Footer
 - [x] OG image & tags
-
-### Features
-
-- [ ] Upgrade Firebase functions (v2)
