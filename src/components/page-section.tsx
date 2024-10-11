@@ -10,7 +10,7 @@ export const PageSection = ({
     return (
         <section
             className={cn(
-                'flex max-w-[980px] flex-col justify-around items-start gap-8 px-4 py-10 md:py-20 mx-auto',
+                'mx-auto flex max-w-[980px] flex-col items-start justify-around gap-8 px-4 py-10 md:py-20',
                 className
             )}
             {...props}>
@@ -43,7 +43,7 @@ export const PageSectionDescription = ({
     return (
         <Typography
             as='p'
-            className={cn(['text-stone-600', 'text-pretty'], className)}
+            className={cn(['text-foreground', 'text-pretty'], className)}
             {...props}
         />
     )

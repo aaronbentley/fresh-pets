@@ -15,8 +15,13 @@ const iconImage = async () => {
     return new ImageResponse(
         (
             <div
-                tw='text-stone-50 flex flex-col items-center justify-center h-full w-full rounded-full'
                 style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    width: '100%',
+                    height: '100%',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     backgroundColor: '#00A29E'
                 }}>
                 <svg
@@ -24,7 +29,7 @@ const iconImage = async () => {
                     viewBox='0 0 1000 1000'
                     width={380}
                     height={380}
-                    fill='currentColor'>
+                    fill='white'>
                     <g id='Sparkles'>
                         <path
                             d='M650.085,240.325c-57.941,10.667-66.588,19.314-77.255,77.255c-10.667-57.941-19.314-66.588-77.255-77.255

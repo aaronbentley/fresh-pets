@@ -4,18 +4,21 @@
  * @link https://github.com/shadcn-ui/ui/pull/363
  */
 
+import { cn } from '@/lib/utils'
 import { Slot } from '@radix-ui/react-slot'
 import { VariantProps, cva } from 'class-variance-authority'
 import * as React from 'react'
 
-import { cn } from '@/lib/utils'
-
+/**
+ * Define base classes for typography components
+ */
 const headingBaseClasses = [
     'text-balance',
     'font-bold',
     'tracking-tight',
     'lg:tracking-[-0.035em]'
 ]
+const proseBaseClasses = ['text-lg']
 
 const typographyVariants = cva(['text-lg'], {
     variants: {
@@ -62,20 +65,73 @@ const typographyVariants = cva(['text-lg'], {
                 'lg:text-lg',
                 'xl:text-xl'
             ],
-            p: 'text-lg',
-            span: 'text-lg',
-            lead: 'text-lg sm:text-xl md:text-2xl',
-            blockquote: 'mt-6 border-l-2 pl-6 italic',
-            ul: 'list-disc list-inside ps-4 space-y-2 mt-2 ',
-            ol: 'list-decimal list-inside space-y-8',
-            li: '',
-            em: 'italic inline',
-            strong: 'font-semibold inline',
-            small: 'text-sm',
-            address: 'text-base !not-italic'
+            link: [
+                ...proseBaseClasses,
+                'inline',
+                'transition-all',
+                'duration-200',
+                'underline-offset-4',
+                'hover:text-brand-foreground',
+                'hover:underline'
+            ],
+            p: [...proseBaseClasses],
+            span: [...proseBaseClasses],
+            lead: [
+                ...proseBaseClasses,
+                'sm:text-xl',
+                'md:text-2xl',
+                'lg:text-3xl'
+            ],
+            blockquote: [
+                ...proseBaseClasses,
+                'my-6',
+                'border-l-2',
+                'border-secondary',
+                'bg-muted',
+                'py-12',
+                'px-8',
+                'mx-auto',
+                'text-xl',
+                'italic',
+                'max-w-prose'
+            ],
+            ul: ['list-disc', 'list-inside', 'ps-4', 'space-y-2', 'my-6'],
+            ol: ['list-decimal', 'list-inside', 'ps-4', 'space-y-2', 'my-6'],
+            li: [...proseBaseClasses],
+            em: [...proseBaseClasses, 'italic', 'inline'],
+            strong: [...proseBaseClasses, 'font-semibold', 'inline'],
+            small: ['text-sm'],
+            address: [...proseBaseClasses, '!not-italic', 'max-w-xs'],
+            del: [...proseBaseClasses, 'line-through']
         },
         muted: {
-            true: 'text-stone-600'
+            true: 'text-muted-foreground'
+        },
+        size: {
+            xs: ['text-xs'],
+            sm: ['text-sm'],
+            base: ['text-base'],
+            lg: ['text-lg'],
+            xl: ['text-xl'],
+            '2xl': ['text-2xl'],
+            '3xl': ['text-3xl'],
+            '4xl': ['text-4xl'],
+            '5xl': ['text-5xl'],
+            '6xl': ['text-6xl'],
+            '7xl': ['text-7xl'],
+            '8xl': ['text-8xl'],
+            '9xl': ['text-9xl']
+        },
+        weight: {
+            thin: ['font-thin'],
+            extralight: ['font-extralight'],
+            light: ['font-light'],
+            normal: ['font-normal'],
+            medium: ['font-medium'],
+            semibold: ['font-semibold'],
+            bold: ['font-bold'],
+            extrabold: ['font-extrabold'],
+            black: ['font-black']
         }
     },
     defaultVariants: {
@@ -96,6 +152,7 @@ const variantElementMap: Record<
     h4: 'h4',
     h5: 'h5',
     h6: 'h6',
+    link: 'a',
     p: 'p',
     span: 'span',
     lead: 'p',
@@ -106,7 +163,8 @@ const variantElementMap: Record<
     em: 'em',
     strong: 'strong',
     small: 'small',
-    address: 'address'
+    address: 'address',
+    del: 'del'
 }
 
 export interface TypographyProps
@@ -114,10 +172,24 @@ export interface TypographyProps
         VariantProps<typeof typographyVariants> {
     asChild?: boolean
     as?: string
+    disableSelect?: boolean
 }
 
 const Typography = React.forwardRef<HTMLElement, TypographyProps>(
-    ({ className, variant, as, asChild, muted, ...props }, ref) => {
+    (
+        {
+            className,
+            variant = 'p',
+            muted,
+            size,
+            weight,
+            as,
+            asChild,
+            disableSelect,
+            ...props
+        },
+        ref
+    ) => {
         const Comp = asChild
             ? Slot
             : (as ??
@@ -126,7 +198,14 @@ const Typography = React.forwardRef<HTMLElement, TypographyProps>(
         return (
             <Comp
                 className={cn(
-                    typographyVariants({ variant, muted, className })
+                    typographyVariants({
+                        variant,
+                        className,
+                        muted,
+                        size,
+                        weight
+                    }),
+                    disableSelect && 'select-none'
                 )}
                 ref={ref}
                 {...props}

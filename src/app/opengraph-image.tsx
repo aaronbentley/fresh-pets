@@ -17,21 +17,28 @@ const opengraphImage = async () => {
     return new ImageResponse(
         (
             <div
-                tw='flex flex-col items-center justify-center h-full w-full'
                 style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: '100%',
+                    width: '100%',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     backgroundColor: '#00A29E',
-                    color: '#fafaf9'
+                    color: '#ffffff'
                 }}>
                 <div
-                    tw='flex items-center justify-center'
                     style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                         gap: '100px'
                     }}>
                     <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 1000 1000'
                         width={500}
-                        fill='#fafaf9'>
+                        fill='#ffffff'>
                         <g id='Sparkles'>
                             <path
                                 d='M650.085,240.325c-57.941,10.667-66.588,19.314-77.255,77.255c-10.667-57.941-19.314-66.588-77.255-77.255
@@ -73,7 +80,7 @@ const opengraphImage = async () => {
                     <svg
                         xmlns='http://www.w3.org/2000/svg'
                         viewBox='0 0 1000 245.52'
-                        fill='#fafaf9'>
+                        fill='#ffffff'>
                         <g id='Brand'>
                             <g
                                 id='Strapline'

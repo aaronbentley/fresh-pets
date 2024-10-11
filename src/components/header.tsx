@@ -7,7 +7,7 @@ import MobileNav from './mobile-nav'
 import { Button, buttonVariants } from './ui/button'
 
 const Header = () => (
-    <header className='sticky top-0 z-50 w-full border-b border-stone-200 bg-stone-50/80 backdrop-blur'>
+    <header className='sticky top-0 z-50 w-full border-b border-muted bg-background/80 backdrop-blur'>
         <div className='flex items-center px-4 sm:container'>
             <div className='flex w-full justify-between py-4'>
                 <div className='flex flex-row-reverse items-center md:space-x-4 lg:flex-row'>
