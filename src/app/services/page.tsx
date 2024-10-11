@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const Services = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
+            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={doggoThree}
                     alt='Doggo'
@@ -40,19 +40,19 @@ const Services = () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Treatments
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         We offer a wide range of services to keep your dog
                         looking and feeling their best, from a simple bath and
                         brush to a full groom.
                     </Typography>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         We want your dog to look fabulous - therefore all pets
                         require bathing before any clipping and trimming, with
                         the exception of Hand Stripping and While You Wait
@@ -61,14 +61,14 @@ const Services = () => {
                 </PageSection>
             </div>
 
-            <div className='grid grid-cols-1 divide-y divide-brand/20 px-8'>
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
+            <div className='grid grid-cols-1 divide-y divide-primary/20 px-8'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
+                    <div className='h-72 w-full bg-primary/50 md:col-span-3'></div>
 
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <Typography
                             variant='h3'
-                            className='text-brand'>
+                            className='text-primary'>
                             Hand Stripping
                         </Typography>
                         <Typography variant='p'>
@@ -93,12 +93,12 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
+                    <div className='h-72 w-full bg-primary/50 md:col-span-3'></div>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <Typography
                             variant='h3'
-                            className='text-brand'>
+                            className='text-primary'>
                             Full Groom
                         </Typography>
                         <Typography variant='p'>
@@ -114,12 +114,12 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
+                    <div className='h-72 w-full bg-primary/50 md:col-span-3'></div>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <Typography
                             variant='h3'
-                            className='text-brand'>
+                            className='text-primary'>
                             Puppy Groom
                         </Typography>
                         <Typography as='p'>
@@ -135,12 +135,12 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
+                    <div className='h-72 w-full bg-primary/50 md:col-span-3'></div>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <Typography
                             variant='h3'
-                            className='text-brand'>
+                            className='text-primary'>
                             Bath and Brush
                         </Typography>
                         <Typography as='p'>
@@ -161,12 +161,12 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
+                    <div className='h-72 w-full bg-primary/50 md:col-span-3'></div>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <Typography
                             variant='h3'
-                            className='text-brand'>
+                            className='text-primary'>
                             Teeth Cleaning
                         </Typography>
                         <Typography as='p'>
@@ -183,12 +183,12 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
-                    <div className='h-72 w-full bg-brand/50 md:col-span-3'></div>
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
+                    <div className='h-72 w-full bg-primary/50 md:col-span-3'></div>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <Typography
                             variant='h3'
-                            className='text-brand'>
+                            className='text-primary'>
                             While You Wait
                         </Typography>
                         <Typography as='p'>

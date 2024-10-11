@@ -72,13 +72,18 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html
             lang='en'
-            className={cn(['light', 'scroll-pt-24'])}
+            className={cn([
+                // 'light',
+                'scroll-pt-24'
+            ])}
             suppressHydrationWarning>
             <body
-                className={cn(
-                    'min-h-screen bg-background font-sans antialiased',
+                className={cn([
+                    'min-h-screen',
+                    'font-sans',
+                    'antialiased',
                     fontSans.variable
-                )}>
+                ])}>
                 <script
                     type='application/ld+json'
                     dangerouslySetInnerHTML={{
@@ -87,7 +92,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                 />
                 <div className='relative flex min-h-screen flex-col'>
                     <Header />
-                    <div className='flex-1 flex min-h-max flex-col items-center justify-start gap-y-4 md:gap-y-12'>
+                    <div className='flex min-h-max flex-1 flex-col items-center justify-start gap-y-4 md:gap-y-12'>
                         <Suspense>{children}</Suspense>
                     </div>
                     <Footer />

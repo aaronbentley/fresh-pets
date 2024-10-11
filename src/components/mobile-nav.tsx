@@ -31,7 +31,7 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent
                 side='left'
-                className='pr-0 pl-8'>
+                className='pl-8 pr-0'>
                 <div className='flex items-center gap-x-6'>
                     <Link
                         href='/'
@@ -43,14 +43,14 @@ const MobileNav = () => {
                             'tracking-tight',
                             'transition-all',
                             'duration-200',
-                            'text-brand',
-                            'hover:bg-brand/20',
-                            'hover:text-brand'
+                            'text-primary',
+                            'hover:bg-primary/20',
+                            'hover:text-primary'
                         ])}>
                         {process.env.NEXT_PUBLIC_APP_TITLE!}
                     </Link>
                 </div>
-                <ScrollArea className='mt-8 mb-4 h-[calc(100vh-12rem)] pb-10'>
+                <ScrollArea className='mb-4 mt-8 h-[calc(100vh-12rem)] pb-10'>
                     <div className='flex flex-col space-y-2'>
                         {links.map((link, index) => (
                             <MobileLink
@@ -62,7 +62,7 @@ const MobileNav = () => {
                         ))}
                     </div>
                 </ScrollArea>
-                <Mark className='fill-brand size-16' />
+                <Mark className='size-16 fill-primary' />
             </SheetContent>
         </Sheet>
     )
@@ -98,7 +98,7 @@ const MobileLink = ({
             className={cn(
                 navigationMenuTriggerStyle(),
                 'font-bold',
-                active && ['text-background', 'bg-brand'],
+                active && ['text-background', 'bg-primary'],
                 className
             )}
             {...props}>

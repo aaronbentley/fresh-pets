@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const About = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
+            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={doggoFive}
                     alt='Doggo'
@@ -43,12 +43,12 @@ const About = () => {
 
             <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Our history
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         [Fresh Pets origin story here] - [Awards & Accolades] -
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
@@ -58,20 +58,20 @@ const About = () => {
 
             <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Meet the team
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
                 </PageSection>
             </div>
 
-            <div className='grid grid-cols-1 divide-y divide-brand/20 px-8'>
-                <div className='container max-w-[980px] px-4 pb-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
+            <div className='grid grid-cols-1 divide-y divide-primary/20 px-8'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 pb-24 md:grid-cols-7 md:gap-16'>
                     <div className='w-full md:col-span-3'>
                         <Image
                             src={katieBentley}
@@ -79,15 +79,15 @@ const About = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md'
+                            className='w-full rounded-lg object-cover shadow-md'
                         />
                     </div>
 
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <div className='flex flex-col gap-0'>
                             <Typography
                                 variant='h3'
-                                className='text-brand'>
+                                className='text-primary'>
                                 Katie Bentley
                             </Typography>
                             <Typography variant='lead'>Owner</Typography>
@@ -106,7 +106,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
                     <div className='w-full md:col-span-3'>
                         <Image
                             src={jazWake}
@@ -114,15 +114,15 @@ const About = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md'
+                            className='w-full rounded-lg object-cover shadow-md'
                         />
                     </div>
 
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <div className='flex flex-col gap-0'>
                             <Typography
                                 variant='h3'
-                                className='text-brand'>
+                                className='text-primary'>
                                 Jaz Wake
                             </Typography>
                             <Typography variant='lead'>
@@ -141,7 +141,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
                     <div className='w-full md:col-span-3'>
                         <Image
                             src={jemimaSingleton}
@@ -149,15 +149,15 @@ const About = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md'
+                            className='w-full rounded-lg object-cover shadow-md'
                         />
                     </div>
 
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <div className='flex flex-col gap-0'>
                             <Typography
                                 variant='h3'
-                                className='text-brand'>
+                                className='text-primary'>
                                 Jemima Singleton
                             </Typography>
                             <Typography variant='lead'>
@@ -178,7 +178,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='container max-w-[980px] px-4 py-24 mx-auto grid md:grid-cols-7 gap-8 md:gap-16'>
+                <div className='container mx-auto grid max-w-[980px] gap-8 px-4 py-24 md:grid-cols-7 md:gap-16'>
                     <div className='w-full md:col-span-3'>
                         <Image
                             src={oliverBentley}
@@ -186,15 +186,15 @@ const About = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md'
+                            className='w-full rounded-lg object-cover shadow-md'
                         />
                     </div>
 
-                    <div className='md:col-span-4 flex flex-col justify-start items-start gap-8'>
+                    <div className='flex flex-col items-start justify-start gap-8 md:col-span-4'>
                         <div className='flex flex-col gap-0'>
                             <Typography
                                 variant='h3'
-                                className='text-brand'>
+                                className='text-primary'>
                                 Oliver
                             </Typography>
                             <Typography variant='lead'>Chief Pupper</Typography>

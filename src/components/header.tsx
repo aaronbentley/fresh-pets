@@ -8,10 +8,10 @@ import { Button, buttonVariants } from './ui/button'
 
 const Header = () => (
     <header className='sticky top-0 z-50 w-full border-b border-stone-200 bg-stone-50/80 backdrop-blur'>
-        <div className='px-4 sm:container flex items-center'>
-            <div className='flex justify-between w-full py-4'>
-                <div className='flex flex-row-reverse lg:flex-row items-center md:space-x-4'>
-                    <Mark className='hidden lg:flex size-6 fill-brand' />
+        <div className='flex items-center px-4 sm:container'>
+            <div className='flex w-full justify-between py-4'>
+                <div className='flex flex-row-reverse items-center md:space-x-4 lg:flex-row'>
+                    <Mark className='hidden size-6 fill-primary lg:flex' />
                     <Link
                         href='/'
                         className={cn(buttonVariants({ variant: 'ghost' }), [
@@ -22,9 +22,9 @@ const Header = () => (
                             'tracking-tight',
                             'transition-all',
                             'duration-200',
-                            'text-brand',
-                            'hover:text-brand',
-                            'hover:bg-brand/20'
+                            'text-primary',
+                            'hover:text-primary',
+                            'hover:bg-primary/20'
                         ])}>
                         {process.env.APP_TITLE!}
                     </Link>
@@ -41,9 +41,9 @@ const Header = () => (
                                 }),
                                 [
                                     'font-bold',
-                                    'bg-brand',
+                                    'bg-primary',
                                     'text-background',
-                                    'hover:bg-brand-dark',
+                                    'hover:bg-primary-dark',
                                     'hover:cursor-pointer',
                                     'md:h-10',
                                     'md:px-4',

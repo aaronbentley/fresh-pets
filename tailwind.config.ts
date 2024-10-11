@@ -15,34 +15,24 @@ const config = {
                 sans: ['var(--font-sans)', ...fontFamily.sans]
             },
             colors: {
-                brand: 'hsl(var(--brand) / <alpha-value> )',
-                'brand-foreground':
-                    'hsl(var(--brand-foreground) / <alpha-value> )',
-
-                'brand-light': 'hsl(var(--brand-light) / <alpha-value> )',
-                'brand-light-foreground':
-                    'hsl(var(--brand-light-foreground) / <alpha-value> )',
-
-                'brand-dark': 'hsl(var(--brand-dark) / <alpha-value> )',
-                'brand-dark-foreground':
-                    'hsl(var(--brand-dark-foreground) / <alpha-value> )',
-
-                border: 'hsl(var(--border))',
-                input: 'hsl(var(--input))',
-                ring: 'hsl(var(--ring))',
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
+                card: {
+                    DEFAULT: 'hsl(var(--card))',
+                    foreground: 'hsl(var(--card-foreground))'
+                },
+                popover: {
+                    DEFAULT: 'hsl(var(--popover))',
+                    foreground: 'hsl(var(--popover-foreground))'
+                },
                 primary: {
-                    DEFAULT: 'hsl(var(--primary))',
-                    foreground: 'hsl(var(--primary-foreground))'
+                    DEFAULT: 'hsl(var(--primary) / <alpha-value>)',
+                    foreground: 'hsl(var(--primary-foreground) / <alpha-value>)'
                 },
                 secondary: {
-                    DEFAULT: 'hsl(var(--secondary))',
-                    foreground: 'hsl(var(--secondary-foreground))'
-                },
-                destructive: {
-                    DEFAULT: 'hsl(var(--destructive))',
-                    foreground: 'hsl(var(--destructive-foreground))'
+                    DEFAULT: 'hsl(var(--secondary) / <alpha-value>)',
+                    foreground:
+                        'hsl(var(--secondary-foreground) / <alpha-value>)'
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',
@@ -52,14 +42,13 @@ const config = {
                     DEFAULT: 'hsl(var(--accent))',
                     foreground: 'hsl(var(--accent-foreground))'
                 },
-                popover: {
-                    DEFAULT: 'hsl(var(--popover))',
-                    foreground: 'hsl(var(--popover-foreground))'
+                destructive: {
+                    DEFAULT: 'hsl(var(--destructive))',
+                    foreground: 'hsl(var(--destructive-foreground))'
                 },
-                card: {
-                    DEFAULT: 'hsl(var(--card))',
-                    foreground: 'hsl(var(--card-foreground))'
-                }
+                border: 'hsl(var(--border))',
+                input: 'hsl(var(--input))',
+                ring: 'hsl(var(--ring))'
             },
             borderRadius: {
                 lg: 'var(--radius)',

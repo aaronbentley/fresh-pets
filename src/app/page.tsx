@@ -20,14 +20,14 @@ export const metadata: Metadata = {
 const Frontpage = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand after:bg-opacity-75 after:backdrop-contrast-150'>
+            <div className='relative w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={oliverChiefPupper}
                     alt='Oliver the Chief Pupper'
                     placeholder='blur'
                     priority={true}
                     sizes='100vw'
-                    className='w-full object-cover h-screen z-0'
+                    className='z-0 h-screen w-full object-cover'
                 />
                 <Hero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
                     <HeroHeading className='text-background'>
@@ -50,9 +50,9 @@ const Frontpage = () => {
                                     'self-center',
                                     'sm:self-start',
                                     'bg-background',
-                                    'text-brand',
+                                    'text-primary',
                                     'font-bold',
-                                    'hover:bg-brand',
+                                    'hover:bg-primary',
                                     'hover:text-background'
                                 ]
                             )}>
@@ -62,13 +62,13 @@ const Frontpage = () => {
                 </Hero>
             </div>
 
-            <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
-                <div className='grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16'>
-                    <div className='flex flex-col gap-8 justify-center order-2 md:order-1'>
+            <div className='container flex w-full flex-col gap-8 py-24 md:py-32'>
+                <div className='grid gap-8 md:grid-cols-2 md:gap-10 lg:gap-16'>
+                    <div className='order-2 flex flex-col justify-center gap-8 md:order-1'>
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
-                                className='text-brand'>
+                                className='text-primary'>
                                 Top to Tail Services
                             </Typography>
                             <Typography
@@ -103,21 +103,21 @@ const Frontpage = () => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col order-1 md:order-2'>
+                    <div className='order-1 flex flex-col md:order-2'>
                         <Image
                             src={doggoOne}
                             alt='Doggo'
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md'
+                            className='w-full rounded-lg object-cover shadow-md'
                         />
                     </div>
                 </div>
             </div>
 
-            <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
-                <div className='grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16'>
+            <div className='container flex w-full flex-col gap-8 py-24 md:py-32'>
+                <div className='grid gap-8 md:grid-cols-2 md:gap-10 lg:gap-16'>
                     <div className='flex flex-col'>
                         <Image
                             src={doggoFive}
@@ -125,7 +125,7 @@ const Frontpage = () => {
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md'
+                            className='w-full rounded-lg object-cover shadow-md'
                         />
                     </div>
 
@@ -133,7 +133,7 @@ const Frontpage = () => {
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
-                                className='text-brand'>
+                                className='text-primary'>
                                 Pampering Paws
                             </Typography>
                             <Typography
@@ -169,13 +169,13 @@ const Frontpage = () => {
                 </div>
             </div>
 
-            <div className='container w-full flex flex-col gap-8 py-24 md:py-32'>
-                <div className='grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16'>
-                    <div className='flex flex-col gap-8 justify-center order-2 md:order-1'>
+            <div className='container flex w-full flex-col gap-8 py-24 md:py-32'>
+                <div className='grid gap-8 md:grid-cols-2 md:gap-10 lg:gap-16'>
+                    <div className='order-2 flex flex-col justify-center gap-8 md:order-1'>
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 variant='h2'
-                                className='text-brand'>
+                                className='text-primary'>
                                 Fur-ever Fabulous
                             </Typography>
                             <Typography
@@ -209,14 +209,14 @@ const Frontpage = () => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col order-1 md:order-2'>
+                    <div className='order-1 flex flex-col md:order-2'>
                         <Image
                             src={doggoSix}
                             alt='Doggo'
                             placeholder='blur'
                             priority={true}
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw'
-                            className='w-full object-cover rounded-lg shadow-md'
+                            className='w-full rounded-lg object-cover shadow-md'
                         />
                     </div>
                 </div>

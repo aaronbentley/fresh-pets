@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const Contact = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
+            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={doggoOne}
                     alt='Doggo'
@@ -41,29 +41,29 @@ const Contact = () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Get in touch
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
                 </PageSection>
 
-                <div className='grid grid-cols-2 lg:grid-cols-4 max-w-[920px] mx-auto gap-6'>
+                <div className='mx-auto grid max-w-[920px] grid-cols-2 gap-6 lg:grid-cols-4'>
                     <a
                         title={`Call ${process.env.APP_TITLE!}`}
                         aria-label='Phone'
                         href={`tel://${process.env.APP_CONTACT_PHONE!}`}
                         target='_blank'
-                        className='cursor-pointer text-brand group'>
-                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand/20 p-8 lg:p-12 rounded-lg'>
-                            <Phone className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                        className='group cursor-pointer text-primary'>
+                        <div className='flex flex-col items-center gap-6 rounded-lg p-8 transition-all duration-200 hover:bg-primary/20 lg:p-12'>
+                            <Phone className='size-6 transition-all duration-200 group-hover:scale-125 sm:size-7 md:size-8' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-bold group-hover:text-brand'>
+                                className='text-sm font-bold group-hover:text-primary sm:text-base'>
                                 07801 255796
                             </Typography>
                         </div>
@@ -74,12 +74,12 @@ const Contact = () => {
                         aria-label='Messenger'
                         href={process.env.APP_SOCIAL_MESSENGER!}
                         target='_blank'
-                        className='cursor-pointer text-brand group'>
-                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand/20 p-8 lg:p-12 rounded-lg'>
-                            <Messenger className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                        className='group cursor-pointer text-primary'>
+                        <div className='flex flex-col items-center gap-6 rounded-lg p-8 transition-all duration-200 hover:bg-primary/20 lg:p-12'>
+                            <Messenger className='size-6 transition-all duration-200 group-hover:scale-125 sm:size-7 md:size-8' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-bold group-hover:text-brand'>
+                                className='text-sm font-bold group-hover:text-primary sm:text-base'>
                                 @freshpetsiow
                             </Typography>
                         </div>
@@ -90,12 +90,12 @@ const Contact = () => {
                         aria-label='WhatsApp'
                         href={process.env.APP_SOCIAL_WHATSAPP!}
                         target='_blank'
-                        className='cursor-pointer text-brand group'>
-                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand/20 p-8 lg:p-12 rounded-lg'>
-                            <WhatsApp className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                        className='group cursor-pointer text-primary'>
+                        <div className='flex flex-col items-center gap-6 rounded-lg p-8 transition-all duration-200 hover:bg-primary/20 lg:p-12'>
+                            <WhatsApp className='size-6 transition-all duration-200 group-hover:scale-125 sm:size-7 md:size-8' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-bold group-hover:text-brand'>
+                                className='text-sm font-bold group-hover:text-primary sm:text-base'>
                                 07801 255796
                             </Typography>
                         </div>
@@ -106,12 +106,12 @@ const Contact = () => {
                         aria-label='Email'
                         href={`mailto:${process.env.APP_CONTACT_EMAIL!}`}
                         target='_blank'
-                        className='cursor-pointer text-brand group'>
-                        <div className='transition-all duration-200 flex flex-col items-center gap-6 hover:bg-brand/20 p-8 lg:p-12 rounded-lg'>
-                            <Email className='transition-all duration-200 size-6 sm:size-7 md:size-8 group-hover:scale-125' />
+                        className='group cursor-pointer text-primary'>
+                        <div className='flex flex-col items-center gap-6 rounded-lg p-8 transition-all duration-200 hover:bg-primary/20 lg:p-12'>
+                            <Email className='size-6 transition-all duration-200 group-hover:scale-125 sm:size-7 md:size-8' />
                             <Typography
                                 muted
-                                className='text-sm sm:text-base font-bold group-hover:text-brand'>
+                                className='text-sm font-bold group-hover:text-primary sm:text-base'>
                                 freshpets@icloud.com
                             </Typography>
                         </div>
@@ -121,18 +121,18 @@ const Contact = () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Where to find us
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         [Parking details] - Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Donec libero lectus,
                         euismod sit amet vestibulum sed.
                     </Typography>
 
-                    <div className='grid lg:grid-cols-3 w-full gap-12 py-12'>
+                    <div className='grid w-full gap-12 py-12 lg:grid-cols-3'>
                         <div className='w-full lg:col-span-2'>
                             <DynamicMap />
                         </div>

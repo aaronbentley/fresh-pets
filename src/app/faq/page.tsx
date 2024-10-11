@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const Faq = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
+            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={doggoFour}
                     alt='Doggo'
@@ -45,25 +45,27 @@ const Faq = () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Here to help you
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
                 </PageSection>
             </div>
 
-            <div className='container max-w-[880px] px-4 mx-auto'>
+            <div className='container mx-auto max-w-[880px] px-4'>
                 <Accordion
                     type='single'
                     className='w-full'
                     collapsible>
-                    <AccordionItem value='item-1'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
+                    <AccordionItem
+                        value='item-1'
+                        className='border-primary/20'>
+                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
                             How long will the groom take?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -75,8 +77,10 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value='item-2'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
+                    <AccordionItem
+                        value='item-2'
+                        className='border-primary/20'>
+                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
                             Do you have a mild shampoo for itchy skin?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -88,8 +92,10 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value='item-3'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
+                    <AccordionItem
+                        value='item-3'
+                        className='border-primary/20'>
+                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
                             Can I stay with my dog whilst being groomed?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -110,8 +116,10 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value='item-4'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
+                    <AccordionItem
+                        value='item-4'
+                        className='border-primary/20'>
+                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
                             My dog is knotty, will this cost extra?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -125,8 +133,10 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value='item-5'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
+                    <AccordionItem
+                        value='item-5'
+                        className='border-primary/20'>
+                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
                             Do you offer a dry clip service?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -136,8 +146,10 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value='item-6'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
+                    <AccordionItem
+                        value='item-6'
+                        className='border-primary/20'>
+                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
                             Do you offer an ear plucking service?
                         </AccordionTrigger>
                         <AccordionContent asChild>
@@ -149,8 +161,10 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value='item-8'>
-                        <AccordionTrigger className='text-xl font-bold text-start'>
+                    <AccordionItem
+                        value='item-8'
+                        className='border-primary/20'>
+                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
                             What type of payment do you accept?
                         </AccordionTrigger>
                         <AccordionContent asChild>

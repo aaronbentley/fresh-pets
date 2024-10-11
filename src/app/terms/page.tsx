@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const Terms = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
+            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={doggoOne}
                     alt='Doggo'
@@ -40,12 +40,12 @@ const Terms = () => {
 
             <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Service Terms and Conditions
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         These terms and conditions apply to all customers and
                         bookings:
                     </Typography>

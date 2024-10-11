@@ -4,42 +4,55 @@
 
 @layer base {
     :root {
-        --brand: 178.519 100% 32%;
-        --brand-foreground: 178.519 100% 32%;
-
-        --brand-light: 179 100% 37%;
-        --brand-light-foreground: 179 100% 37%;
-
-        --brand-dark: 178 100% 27%;
-        --brand-dark-foreground: 178 100% 27%;
-
+             /* Default background color of <body />...etc */
+        /* #ffffff */
         --background: 0 0% 100%;
+        /* #0c0a09 */
         --foreground: 20 14.3% 4.1%;
 
-        --card: 0 0% 100%;
-        --card-foreground: 20 14.3% 4.1%;
+        /* #ffffff */
+        --card:var(--background);
+        /* #0c0a09 */
+        --card-foreground: var(--foreground);
 
-        --popover: 0 0% 100%;
-        --popover-foreground: 20 14.3% 4.1%;
+        /* #ffffff */
+        --popover: var(--background);
+        /* #0c0a09 */
+        --popover-foreground: var(--foreground);
 
-        --primary: 24 9.8% 10%;
-        --primary-foreground: 60 9.1% 97.8%;
+        /* ##00a39f */
+        --primary: 178.519 100% 32%;
+        /* #ffffff */
+        --primary-foreground: var(--background);
 
-        --secondary: 60 4.8% 95.9%;
-        --secondary-foreground: 24 9.8% 10%;
+        /* 	#95C11F */
+        --secondary: 76 72% 44%;
+        /* #ffffff */
+        --secondary-foreground: var(--background);
 
+        /* #f5f5f4 */
         --muted: 60 4.8% 95.9%;
+        /* #78716c */
         --muted-foreground: 25 5.3% 44.7%;
 
+        /* #f5f5f4 */
         --accent: 60 4.8% 95.9%;
+        /* #1c1917 */
         --accent-foreground: 24 9.8% 10%;
 
+        /* #ef4444 */
         --destructive: 0 84.2% 60.2%;
+        /* ##fafaf9 */
         --destructive-foreground: 60 9.1% 97.8%;
 
+        /* #e7e5e4 */
         --border: 20 5.9% 90%;
+        
+        /* #e7e5e4 */
         --input: 20 5.9% 90%;
-        --ring: 20 14.3% 4.1%;
+        
+        /* #00a39f */
+        --ring: var(--primary);
 
         --radius: 0.5rem;
     }
@@ -49,7 +62,16 @@
     * {
         @apply border-border;
     }
+
+    html {
+        @apply scroll-smooth bg-primary;
+    }
+
     body {
         @apply bg-background text-foreground;
+        /* Prevent the browser from synthesizing bold or italic fonts */
+        font-synthesis-weight: none;
+        /* Improve font rendering on macOS */
+        text-rendering: optimizeLegibility;
     }
 }

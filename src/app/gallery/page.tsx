@@ -82,7 +82,7 @@ const InstagramGallery = async () => {
         const json: { data: InstagramMedia[] } = await response.json()
 
         return (
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 gap-6 md:grid-cols-3'>
                 {json.data.map((media, index) => {
                     return (
                         <div
@@ -94,16 +94,16 @@ const InstagramGallery = async () => {
                                 priority={index <= 6 ? true : false}
                                 fill={true}
                                 sizes='(max-width: 768px) 100vw, (min-width: 769px) 33vw'
-                                className='w-full object-center object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out bg-brand/50'
+                                className='w-full bg-primary/50 object-cover object-center transition-transform duration-200 ease-in-out group-hover:scale-105'
                             />
 
-                            <div className='absolute bottom-4 right-4 z-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out'>
+                            <div className='absolute bottom-4 right-4 z-10 flex flex-col items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100'>
                                 <a
                                     href={media.permalink}
                                     title='View on Instagram'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='p-2 rounded-xl bg-brand bg-opacity-60 backdrop-contrast-125 transition-colors duration-200 ease-in-out'>
+                                    className='rounded-xl bg-primary bg-opacity-60 p-2 backdrop-contrast-125 transition-colors duration-200 ease-in-out'>
                                     <Instagram className='size-6 stroke-background' />
                                 </a>
                             </div>
@@ -120,7 +120,7 @@ const InstagramGallery = async () => {
 const Gallery = async () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
+            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={doggoTwo}
                     alt='Doggo'
@@ -143,12 +143,12 @@ const Gallery = async () => {
 
             <div className='container flex flex-col gap-6 py-20'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Woofin&apos; for the &apos;gram
                     </PageSectionHeading>
                     <Typography
                         variant='lead'
-                        className='md:w-2/3 font-bold'>
+                        className='font-bold md:w-2/3'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec libero lectus, euismod sit amet vestibulum sed.
                     </Typography>
@@ -174,7 +174,7 @@ const Gallery = async () => {
                 </PageSection>
             </div>
 
-            <div className='container max-w-[1080px] flex flex-col gap-6 mx-auto'>
+            <div className='container mx-auto flex max-w-[1080px] flex-col gap-6'>
                 <Suspense fallback={<GridLoader items={9} />}>
                     <InstagramGallery />
                 </Suspense>

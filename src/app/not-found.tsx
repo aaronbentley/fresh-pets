@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const NotFound = async () => (
     <>
-        <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand  after:bg-opacity-75 after:backdrop-contrast-150 h-screen'>
+        <div className='relative h-screen w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
             <Image
                 src={doggoSeven}
                 alt='Doggo'
@@ -25,9 +25,9 @@ const NotFound = async () => (
                 priority={true}
                 sizes='100vw'
                 fill={true}
-                className='w-full object-cover '
+                className='w-full object-cover'
             />
-            <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center h-screen'>
+            <PageHero className='absolute inset-0 z-20 flex h-screen flex-col items-center justify-center'>
                 <PageHeroHeading className='text-background drop-shadow-sm'>
                     Page not found
                 </PageHeroHeading>

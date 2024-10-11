@@ -27,7 +27,7 @@ const DynamicMap = () => {
      */
     if (loadError) {
         return (
-            <div className='flex justify-center w-full py-12'>
+            <div className='flex w-full justify-center py-12'>
                 <Alert
                     variant='destructive'
                     className='max-w-96'>
@@ -49,11 +49,11 @@ const DynamicMap = () => {
     const lng = parseFloat(process.env.NEXT_PUBLIC_APP_LOCATION_LONGITUDE!)
 
     return (
-        <div className='flex justify-center w-full'>
+        <div className='flex w-full justify-center'>
             {!isLoaded ? (
-                <Skeleton className='rounded-lg shadow-md bg-brand/50 h-[400px] w-full' />
+                <Skeleton className='h-[400px] w-full rounded-lg bg-primary/50 shadow-md' />
             ) : (
-                <div className='h-[400px] w-full rounded-lg shadow-md overflow-hidden'>
+                <div className='h-[400px] w-full overflow-hidden rounded-lg shadow-md'>
                     <GoogleMap
                         center={{
                             lat,
@@ -78,8 +78,8 @@ const DynamicMap = () => {
                             options={{
                                 pixelOffset: new google.maps.Size(0, -28)
                             }}>
-                            <div className='flex flex-col items-center gap-2 w-24'>
-                                <Mark className='h-6 w-6 text-brand' />
+                            <div className='flex w-24 flex-col items-center gap-2'>
+                                <Mark className='h-6 w-6 text-primary' />
                                 <Typography
                                     variant='h6'
                                     as='p'>
@@ -91,7 +91,7 @@ const DynamicMap = () => {
                                     title='Get Directions to Fresh Pets'
                                     rel='noopener noreferrer'
                                     target='_blank'
-                                    className='text-brand font-bold hover:text-brand-dark'>
+                                    className='hover:text-primary-dark font-bold text-primary'>
                                     Get Directions
                                 </a>
                             </div>

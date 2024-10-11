@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const Privacy = () => {
     return (
         <>
-            <div className='overflow-hidden w-full relative after:absolute after:inset-0 after:z-10 after:bg-brand after:bg-opacity-75 after:backdrop-contrast-150 h-96'>
+            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
                 <Image
                     src={doggoOne}
                     alt='Doggo'
@@ -41,7 +41,7 @@ const Privacy = () => {
 
             <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Data Protection
                     </PageSectionHeading>
                     <Typography
@@ -81,7 +81,7 @@ const Privacy = () => {
 
             <div className='container flex flex-col gap-6 py-10'>
                 <PageSection>
-                    <PageSectionHeading className='text-brand'>
+                    <PageSectionHeading className='text-primary'>
                         Consent
                     </PageSectionHeading>
                     <Typography
