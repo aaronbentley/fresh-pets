@@ -31,6 +31,10 @@ const MainNav = () => {
                                         navigationMenuTriggerStyle(),
                                         [
                                             'font-bold',
+                                            'transition-colors',
+                                            'duration-200',
+                                            'hover:text-primary',
+                                            'hover:bg-primary/20',
                                             'data-[active]:text-background',
                                             'data-[active]:bg-primary'
                                         ]

@@ -25,7 +25,7 @@ const MobileNav = () => {
                     size='icon'
                     variant='ghost'
                     className='lg:hidden'>
-                    <Menu className='h-[1.2rem] w-[1.2rem]' />
+                    <Menu className='h-[1.2rem] w-[1.2rem] stroke-primary' />
                     <span className='sr-only'>Toggle Menu</span>
                 </Button>
             </SheetTrigger>

@@ -43,7 +43,6 @@ const Header = () => (
                                     'font-bold',
                                     'bg-primary',
                                     'text-background',
-                                    'hover:bg-primary-dark',
                                     'hover:cursor-pointer',
                                     'md:h-10',
                                     'md:px-4',
