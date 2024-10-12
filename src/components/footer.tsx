@@ -1,9 +1,15 @@
 import { legalLinks } from '@/assets/data/links'
+import {
+    Facebook,
+    Instagram,
+    Messenger,
+    Twitter,
+    WhatsApp
+} from '@/components/icons'
+import { Mark } from '@/components/mark'
+import { Typography } from '@/components/typography'
 import { Copyright } from 'lucide-react'
 import Link from 'next/link'
-import { Facebook, Instagram, Messenger, Twitter, WhatsApp } from './icons'
-import { Mark } from './mark'
-import { Typography } from './typography'
 
 const Footer = () => (
     <>

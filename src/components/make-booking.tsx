@@ -1,3 +1,5 @@
+import { Email, Messenger, Phone, WhatsApp } from '@/components/icons'
+import { Typography } from '@/components/typography'
 import {
     Dialog,
     DialogContent,
@@ -6,8 +8,6 @@ import {
     DialogTitle,
     DialogTrigger
 } from '@/components/ui/dialog'
-import { Email, Messenger, Phone, WhatsApp } from './icons'
-import { Typography } from './typography'
 
 const MakeBooking = ({ children }: { children: React.ReactNode }) => (
     <Dialog>

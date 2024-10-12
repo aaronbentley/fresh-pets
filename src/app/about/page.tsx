@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const About = () => {
     return (
         <>
-            <div className='relative h-96 w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
+            <div className='relative min-h-[30vh] w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150 sm:min-h-[35vh] md:min-h-[40vh] xl:min-h-[50vh]'>
                 <Image
                     src={doggoFive}
                     alt='Doggo'

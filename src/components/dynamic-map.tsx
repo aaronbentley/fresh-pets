@@ -1,5 +1,9 @@
 'use client'
 
+import { Mark } from '@/components/mark'
+import { Typography } from '@/components/typography'
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import { Skeleton } from '@/components/ui/skeleton'
 import {
     GoogleMap,
     InfoWindow,
@@ -7,10 +11,6 @@ import {
     useLoadScript
 } from '@react-google-maps/api'
 import { AlertCircle } from 'lucide-react'
-import { Mark } from './mark'
-import { Typography } from './typography'
-import { Alert, AlertDescription, AlertTitle } from './ui/alert'
-import { Skeleton } from './ui/skeleton'
 
 const DynamicMap = () => {
     /**

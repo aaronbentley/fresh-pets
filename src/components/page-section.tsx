@@ -1,6 +1,6 @@
+import { Typography, typographyVariants } from '@/components/typography'
 import { cn } from '@/lib/utils'
 import { VariantProps } from 'class-variance-authority'
-import { Typography, typographyVariants } from './typography'
 
 export const PageSection = ({
     className,

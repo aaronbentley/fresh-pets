@@ -1,16 +1,16 @@
 'use client'
 
 import { links } from '@/assets/data/links'
+import { Mark } from '@/components/mark'
+import { Button, buttonVariants } from '@/components/ui/button'
+import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
+import { ScrollArea } from '@/components/ui/scroll-area'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
 import Link, { LinkProps } from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import React, { useState } from 'react'
-import { Mark } from './mark'
-import { Button, buttonVariants } from './ui/button'
-import { navigationMenuTriggerStyle } from './ui/navigation-menu'
-import { ScrollArea } from './ui/scroll-area'
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 
 const MobileNav = () => {
     // Handle menu state
@@ -95,10 +95,16 @@ const MobileLink = ({
                 router.push(href.toString())
                 onOpenChange?.(false)
             }}
+            data-active={active}
             className={cn(
                 navigationMenuTriggerStyle(),
                 'font-bold',
-                active && ['text-background', 'bg-primary'],
+                'hover:text-primary',
+                'hover:bg-primary/20',
+                active && [
+                    'data-[active=true]:text-background',
+                    'data-[active=true]:bg-primary'
+                ],
                 className
             )}
             {...props}>

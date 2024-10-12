@@ -1,10 +1,10 @@
+import MainNav from '@/components/main-nav'
+import MakeBooking from '@/components/make-booking'
+import { Mark } from '@/components/mark'
+import MobileNav from '@/components/mobile-nav'
+import { Button, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import MainNav from './main-nav'
-import MakeBooking from './make-booking'
-import { Mark } from './mark'
-import MobileNav from './mobile-nav'
-import { Button, buttonVariants } from './ui/button'
 
 const Header = () => (
     <header className='sticky top-0 z-50 w-full border-b border-muted bg-background/80 backdrop-blur'>

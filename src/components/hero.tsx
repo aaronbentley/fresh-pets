@@ -1,5 +1,5 @@
+import { Typography } from '@/components/typography'
 import { cn } from '@/lib/utils'
-import { Typography } from './typography'
 
 export const Hero = ({
     className,
@@ -9,7 +9,7 @@ export const Hero = ({
     <section
         className={cn(['w-full'], className)}
         {...props}>
-        <div className='container w-full flex flex-col gap-8 py-24 md:py-48'>
+        <div className='container flex w-full flex-col gap-8 py-24 md:py-48'>
             {children}
         </div>
     </section>

@@ -11,7 +11,11 @@ import { Suspense } from 'react'
 /**
  * Load fonts
  */
-const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' })
+const fontSans = FontSans({
+    subsets: ['latin'],
+    variable: '--font-sans',
+    weight: ['400', '700']
+})
 
 /**
  * Generate viewport
