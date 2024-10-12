@@ -13,8 +13,7 @@ import { Suspense } from 'react'
  */
 const fontSans = FontSans({
     subsets: ['latin'],
-    variable: '--font-sans',
-    weight: ['400', '700']
+    variable: '--font-sans'
 })
 
 /**
