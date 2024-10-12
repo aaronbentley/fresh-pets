@@ -102,8 +102,8 @@ const MobileLink = ({
                 'hover:text-primary',
                 'hover:bg-primary/20',
                 active && [
-                    'data-[active=true]:text-background',
-                    'data-[active=true]:bg-primary'
+                    'data-[active="true"]:text-background',
+                    'data-[active="true"]:bg-primary'
                 ],
                 className
             )}
