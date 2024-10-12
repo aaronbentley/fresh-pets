@@ -63,11 +63,29 @@ const config = {
                 'accordion-up': {
                     from: { height: 'var(--radix-accordion-content-height)' },
                     to: { height: '0' }
+                },
+                sparkle: {
+                    '0%, 100%': {
+                        opacity: '0.75',
+                        transform: 'scale(1)',
+                        transformOrigin: 'center'
+                    },
+                    '75%': {
+                        opacity: '1',
+                        transform: 'scale(1.025)',
+                        transformOrigin: 'center'
+                    },
+                    '50%': {
+                        opacity: '0.75',
+                        transform: 'scale(.95)',
+                        transformOrigin: 'center'
+                    }
                 }
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
-                'accordion-up': 'accordion-up 0.2s ease-out'
+                'accordion-up': 'accordion-up 0.2s ease-out',
+                sparkle: 'sparkle .5s infinite'
             }
         }
     },

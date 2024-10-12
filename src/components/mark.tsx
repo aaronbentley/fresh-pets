@@ -1,28 +1,60 @@
 import { cn } from '@/lib/utils'
-import React from 'react'
 
-export const Mark = React.forwardRef<
-    SVGSVGElement,
-    React.SVGProps<SVGSVGElement>
->(({ className, ...props }, ref) => (
+type MarkProps = {
+    className?: string
+    flourish?: boolean
+    [key: string]: unknown
+}
+
+export const Mark = ({ className, flourish = false, ...rest }: MarkProps) => (
     <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 1000 1000'
-        ref={ref}
-        className={cn(['size-6', 'fill-current'], className)}
-        {...props}>
+        className={cn(
+            ['size-6', 'fill-current', 'group'],
+            flourish && ['overflow-visible'],
+            className
+        )}
+        {...rest}>
         <g id='Sparkles'>
             <path
                 d='M650.085,240.325c-57.941,10.667-66.588,19.314-77.255,77.255c-10.667-57.941-19.314-66.588-77.255-77.255
 			c57.941-10.667,66.588-19.314,77.255-77.255C583.497,221.012,592.144,229.659,650.085,240.325z'
+                className={cn([
+                    flourish && [
+                        'group-hover:animate-sparkle',
+                        'origin-center',
+                        'transform-gpu',
+                        'transition-all',
+                        'duration-200'
+                    ]
+                ])}
             />
             <path
                 d='M523.145,73.93c-27.027,30.756-28.024,39.196-8.91,75.404c-30.756-27.027-39.196-28.024-75.404-8.91
 			c27.027-30.756,28.024-39.196,8.91-75.404C478.497,92.047,486.936,93.044,523.145,73.93z'
+                className={cn([
+                    flourish && [
+                        'group-hover:animate-sparkle',
+                        'origin-center',
+                        'transform-gpu',
+                        'transition-all',
+                        'duration-200'
+                    ]
+                ])}
             />
             <path
                 d='M117.316,442.77c-45.548-16.167-55.237-13.566-86.565,23.239c16.167-45.548,13.566-55.237-23.239-86.565
 			c45.548,16.167,55.237,13.566,86.565-23.239C77.91,401.753,80.511,411.442,117.316,442.77z'
+                className={cn([
+                    flourish && [
+                        'group-hover:animate-sparkle',
+                        'origin-center',
+                        'transform-gpu',
+                        'transition-all',
+                        'duration-200'
+                    ]
+                ])}
             />
         </g>
         <g id='Doggo'>
@@ -49,6 +81,4 @@ export const Mark = React.forwardRef<
             />
         </g>
     </svg>
-))
-
-Mark.displayName = 'Mark'
+)

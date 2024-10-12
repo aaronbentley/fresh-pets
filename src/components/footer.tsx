@@ -8,7 +8,10 @@ import { Typography } from './typography'
 const Footer = () => (
     <>
         <div className='mt-16 flex items-center justify-center md:mt-32 lg:mt-48'>
-            <Mark className='-mb-1 size-24 fill-primary sm:-mb-2 sm:size-32 md:size-40' />
+            <Mark
+                className='-mb-1 size-24 fill-primary sm:-mb-2 sm:size-32 md:size-40'
+                flourish
+            />
         </div>
         <footer className='flex flex-col gap-12 bg-primary pb-6 pt-12 md:pb-4'>
             <div className='container flex flex-col items-center justify-between gap-4 py-4 md:flex-row md:items-end'>
