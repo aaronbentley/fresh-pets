@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const Frontpage = () => {
     return (
         <>
-            <div className='relative w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
+            <div className='relative w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary/75 after:backdrop-contrast-150'>
                 <Image
                     src={oliverChiefPupper}
                     alt='Oliver the Chief Pupper'

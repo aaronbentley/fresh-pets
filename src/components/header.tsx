@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
 const Header = () => (
-    <header className='sticky top-0 z-50 w-full border-b border-muted bg-background/80 backdrop-blur'>
+    <header className='sticky top-0 z-50 w-full border-b border-muted bg-background/80 backdrop-blur-sm'>
         <div className='flex items-center px-4 sm:container'>
             <div className='flex w-full justify-between py-4'>
                 <div className='flex flex-row-reverse items-center md:space-x-4 lg:flex-row'>

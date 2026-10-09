@@ -103,7 +103,7 @@ const InstagramGallery = async () => {
                                     title='View on Instagram'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='rounded-xl bg-primary bg-opacity-60 p-2 backdrop-contrast-125 transition-colors duration-200 ease-in-out'>
+                                    className='rounded-xl bg-primary/60 p-2 backdrop-contrast-125 transition-colors duration-200 ease-in-out'>
                                     <Instagram className='size-6 stroke-background' />
                                 </a>
                             </div>
@@ -120,7 +120,7 @@ const InstagramGallery = async () => {
 const Gallery = async () => {
     return (
         <>
-            <div className='relative min-h-[30vh] w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150 sm:min-h-[35vh] md:min-h-[40vh] xl:min-h-[50vh]'>
+            <div className='relative min-h-[30vh] w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary/75 after:backdrop-contrast-150 sm:min-h-[35vh] md:min-h-[40vh] xl:min-h-[50vh]'>
                 <Image
                     src={doggoTwo}
                     alt='Doggo'
@@ -131,11 +131,11 @@ const Gallery = async () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-background drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-xs'>
                         Pupper Gallery
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-background drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-xs'>
                         Fur-ever fabulous, ready for a night on the town
                     </PageHeroDescription>
                 </PageHero>

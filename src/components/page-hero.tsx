@@ -21,7 +21,7 @@ export const PageHeroHeading = ({
 }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <Typography
         variant='h1'
-        className={cn(['capitalize', 'drop-shadow-sm'], className)}
+        className={cn(['capitalize', 'drop-shadow-xs'], className)}
         {...props}
     />
 )
@@ -36,7 +36,7 @@ export const PageHeroDescription = ({
             [
                 'font-bold',
                 'text-balance',
-                'drop-shadow-sm',
+                'drop-shadow-xs',
                 'w-full',
                 'md:w-2/3',
                 'text-2xl'

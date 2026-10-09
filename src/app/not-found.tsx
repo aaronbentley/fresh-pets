@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const NotFound = async () => (
     <>
-        <div className='relative h-screen w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150'>
+        <div className='relative h-screen w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary/75 after:backdrop-contrast-150'>
             <Image
                 src={doggoSeven}
                 alt='Doggo'
@@ -28,11 +28,11 @@ const NotFound = async () => (
                 className='w-full object-cover'
             />
             <PageHero className='absolute inset-0 z-20 flex h-screen flex-col items-center justify-center'>
-                <PageHeroHeading className='text-background drop-shadow-sm'>
+                <PageHeroHeading className='text-background drop-shadow-xs'>
                     Page not found
                 </PageHeroHeading>
 
-                <PageHeroDescription className='text-background drop-shadow-sm'>
+                <PageHeroDescription className='text-background drop-shadow-xs'>
                     Looks like this page got caught chasing its tail!
                 </PageHeroDescription>
 

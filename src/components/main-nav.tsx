@@ -35,8 +35,8 @@ const MainNav = () => {
                                             'duration-200',
                                             'hover:text-primary',
                                             'hover:bg-primary/20',
-                                            'data-[active]:text-background',
-                                            'data-[active]:bg-primary'
+                                            'data-active:text-background',
+                                            'data-active:bg-primary'
                                         ]
                                     )}>
                                     {link.label}

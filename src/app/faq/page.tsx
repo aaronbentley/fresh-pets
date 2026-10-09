@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const Faq = () => {
     return (
         <>
-            <div className='relative min-h-[30vh] w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary after:bg-opacity-75 after:backdrop-contrast-150 sm:min-h-[35vh] md:min-h-[40vh] xl:min-h-[50vh]'>
+            <div className='relative min-h-[30vh] w-full overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-primary/75 after:backdrop-contrast-150 sm:min-h-[35vh] md:min-h-[40vh] xl:min-h-[50vh]'>
                 <Image
                     src={doggoFour}
                     alt='Doggo'
@@ -33,11 +33,11 @@ const Faq = () => {
                     className='w-full object-cover'
                 />
                 <PageHero className='absolute inset-0 z-20 flex flex-col items-center justify-center'>
-                    <PageHeroHeading className='text-background drop-shadow-sm'>
+                    <PageHeroHeading className='text-background drop-shadow-xs'>
                         FAQ
                     </PageHeroHeading>
 
-                    <PageHeroDescription className='text-background drop-shadow-sm'>
+                    <PageHeroDescription className='text-background drop-shadow-xs'>
                         Get answers to your most frequently asked questions
                     </PageHeroDescription>
                 </PageHero>
