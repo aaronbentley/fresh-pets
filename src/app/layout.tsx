@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://www.fresh-pets.co.uk/#organization',
+    '@id': `${process.env.APP_URL!}/#organization`,
     url: process.env.APP_URL!,
     name: process.env.APP_TITLE!,
     telephone: '+447801255796',
