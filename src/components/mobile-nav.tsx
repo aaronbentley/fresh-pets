@@ -14,7 +14,7 @@ import {
 import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
 import Link, { LinkProps } from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 
 const MobileNav = () => {
@@ -91,7 +91,6 @@ const MobileLink = ({
     children,
     ...props
 }: MobileLinkProps) => {
-    const router = useRouter()
     const pathname = usePathname()
 
     const active = pathname === href
@@ -99,20 +98,19 @@ const MobileLink = ({
     return (
         <Link
             href={href}
-            onClick={() => {
-                router.push(href.toString())
-                onOpenChange?.(false)
-            }}
-            data-active={active}
+            onClick={() => onOpenChange?.(false)}
+            data-active={active || undefined}
             className={cn(
                 navigationMenuTriggerStyle(),
                 'font-bold',
                 'hover:text-primary',
                 'hover:bg-primary/20',
-                active && [
-                    'data-[active="true"]:text-background',
-                    'data-[active="true"]:bg-primary'
-                ],
+                'data-active:text-background',
+                'data-active:bg-primary',
+                'data-active:hover:text-background',
+                'data-active:hover:bg-primary',
+                'data-active:focus:text-background',
+                'data-active:focus:bg-primary',
                 className
             )}
             {...props}>

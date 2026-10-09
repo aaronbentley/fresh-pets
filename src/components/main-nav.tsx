@@ -32,7 +32,9 @@ const MainNav = () => {
                                     'hover:bg-primary/20',
                                     'data-active:text-background',
                                     'data-active:bg-primary',
+                                    'data-active:hover:text-background',
                                     'data-active:hover:bg-primary',
+                                    'data-active:focus:text-background',
                                     'data-active:focus:bg-primary'
                                 ])}>
                                 {link.label}
