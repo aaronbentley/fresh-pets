@@ -5,7 +5,12 @@ import { Mark } from '@/components/mark'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+    Sheet,
+    SheetContent,
+    SheetTitle,
+    SheetTrigger
+} from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
 import Link, { LinkProps } from 'next/link'
@@ -20,18 +25,21 @@ const MobileNav = () => {
         <Sheet
             open={open}
             onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-                <Button
-                    size='icon'
-                    variant='ghost'
-                    className='lg:hidden'>
-                    <Menu className='h-[1.2rem] w-[1.2rem] stroke-primary' />
-                    <span className='sr-only'>Toggle Menu</span>
-                </Button>
+            <SheetTrigger
+                render={
+                    <Button
+                        size='icon'
+                        variant='ghost'
+                        className='lg:hidden'
+                    />
+                }>
+                <Menu className='h-[1.2rem] w-[1.2rem] stroke-primary' />
+                <span className='sr-only'>Toggle Menu</span>
             </SheetTrigger>
             <SheetContent
                 side='left'
-                className='pl-8 pr-0'>
+                className='py-6 pr-0 pl-8'>
+                <SheetTitle className='sr-only'>Menu</SheetTitle>
                 <div className='flex items-center gap-x-6'>
                     <Link
                         href='/'

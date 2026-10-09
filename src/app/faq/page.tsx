@@ -59,16 +59,14 @@ const Faq = () => {
 
             <div className='container mx-auto max-w-[880px] px-4'>
                 <Accordion
-                    type='single'
-                    className='w-full'
-                    collapsible>
+                    className='w-full'>
                     <AccordionItem
                         value='item-1'
                         className='border-primary/20'>
-                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
+                        <AccordionTrigger className='items-center py-4 text-start text-xl font-bold aria-expanded:**:data-[slot=accordion-trigger-icon]:text-primary'>
                             How long will the groom take?
                         </AccordionTrigger>
-                        <AccordionContent asChild>
+                        <AccordionContent>
                             <Typography variant='p'>
                                 On average a full groom will take 2.5 hours
                                 however the length of time is dependable on
@@ -80,10 +78,10 @@ const Faq = () => {
                     <AccordionItem
                         value='item-2'
                         className='border-primary/20'>
-                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
+                        <AccordionTrigger className='items-center py-4 text-start text-xl font-bold aria-expanded:**:data-[slot=accordion-trigger-icon]:text-primary'>
                             Do you have a mild shampoo for itchy skin?
                         </AccordionTrigger>
-                        <AccordionContent asChild>
+                        <AccordionContent>
                             <Typography variant='p'>
                                 Yes we do. We can also offer advice on possible
                                 causes and solutions when you come in for your
@@ -95,10 +93,10 @@ const Faq = () => {
                     <AccordionItem
                         value='item-3'
                         className='border-primary/20'>
-                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
+                        <AccordionTrigger className='items-center py-4 text-start text-xl font-bold aria-expanded:**:data-[slot=accordion-trigger-icon]:text-primary'>
                             Can I stay with my dog whilst being groomed?
                         </AccordionTrigger>
-                        <AccordionContent asChild>
+                        <AccordionContent>
                             <Typography
                                 variant='p'
                                 className='mb-6'>
@@ -119,10 +117,10 @@ const Faq = () => {
                     <AccordionItem
                         value='item-4'
                         className='border-primary/20'>
-                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
+                        <AccordionTrigger className='items-center py-4 text-start text-xl font-bold aria-expanded:**:data-[slot=accordion-trigger-icon]:text-primary'>
                             My dog is knotty, will this cost extra?
                         </AccordionTrigger>
-                        <AccordionContent asChild>
+                        <AccordionContent>
                             <Typography variant='p'>
                                 A few knots here and there will not increase the
                                 price however, severe matting will result in
@@ -136,10 +134,10 @@ const Faq = () => {
                     <AccordionItem
                         value='item-5'
                         className='border-primary/20'>
-                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
+                        <AccordionTrigger className='items-center py-4 text-start text-xl font-bold aria-expanded:**:data-[slot=accordion-trigger-icon]:text-primary'>
                             Do you offer a dry clip service?
                         </AccordionTrigger>
-                        <AccordionContent asChild>
+                        <AccordionContent>
                             <Typography variant='p'>
                                 We do not offer a dry clip service.
                             </Typography>
@@ -149,10 +147,10 @@ const Faq = () => {
                     <AccordionItem
                         value='item-6'
                         className='border-primary/20'>
-                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
+                        <AccordionTrigger className='items-center py-4 text-start text-xl font-bold aria-expanded:**:data-[slot=accordion-trigger-icon]:text-primary'>
                             Do you offer an ear plucking service?
                         </AccordionTrigger>
-                        <AccordionContent asChild>
+                        <AccordionContent>
                             <Typography variant='p'>
                                 Only if absolutely necessary and with owners
                                 consent. We will not pluck ears if there is any
@@ -164,10 +162,10 @@ const Faq = () => {
                     <AccordionItem
                         value='item-8'
                         className='border-primary/20'>
-                        <AccordionTrigger className='text-start text-xl font-bold [&[data-state=open]>svg]:stroke-primary [&[data-state=open]>svg]:transition-all'>
+                        <AccordionTrigger className='items-center py-4 text-start text-xl font-bold aria-expanded:**:data-[slot=accordion-trigger-icon]:text-primary'>
                             What type of payment do you accept?
                         </AccordionTrigger>
-                        <AccordionContent asChild>
+                        <AccordionContent>
                             <Typography
                                 variant='p'
                                 className='mb-6'>

@@ -154,7 +154,15 @@ const Gallery = async () => {
                     </Typography>
 
                     <Button
-                        asChild
+                        nativeButton={false}
+                        render={
+                            <a
+                                href={process.env.APP_SOCIAL_INSTAGRAM!}
+                                title='Follow us on Instagram'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            />
+                        }
                         className={cn(
                             buttonVariants({
                                 variant: 'default',
@@ -163,13 +171,7 @@ const Gallery = async () => {
                             'font-bold',
                             'hover:cursor-pointer'
                         )}>
-                        <a
-                            href={process.env.APP_SOCIAL_INSTAGRAM!}
-                            title='Follow us on Instagram'
-                            target='_blank'
-                            rel='noopener noreferrer'>
-                            Follow us on Instagram
-                        </a>
+                        Follow us on Instagram
                     </Button>
                 </PageSection>
             </div>

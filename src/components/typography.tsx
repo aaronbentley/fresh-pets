@@ -5,7 +5,6 @@
  */
 
 import { cn } from '@/lib/utils'
-import { Slot } from '@radix-ui/react-slot'
 import { VariantProps, cva } from 'class-variance-authority'
 import * as React from 'react'
 
@@ -144,7 +143,7 @@ type VariantPropType = VariantProps<typeof typographyVariants>
 
 const variantElementMap: Record<
     NonNullable<VariantPropType['variant']>,
-    string
+    keyof React.JSX.IntrinsicElements
 > = {
     h1: 'h1',
     h2: 'h2',
@@ -170,49 +169,40 @@ const variantElementMap: Record<
 export interface TypographyProps
     extends React.HTMLAttributes<HTMLElement>,
         VariantProps<typeof typographyVariants> {
-    asChild?: boolean
-    as?: string
+    ref?: React.Ref<HTMLElement>
+    as?: React.ElementType
     disableSelect?: boolean
 }
 
-const Typography = React.forwardRef<HTMLElement, TypographyProps>(
-    (
-        {
-            className,
-            variant = 'p',
-            muted,
-            size,
-            weight,
-            as,
-            asChild,
-            disableSelect,
-            ...props
-        },
-        ref
-    ) => {
-        const Comp = asChild
-            ? Slot
-            : (as ??
-              (variant ? variantElementMap[variant] : undefined) ??
-              'div')
-        return (
-            <Comp
-                className={cn(
-                    typographyVariants({
-                        variant,
-                        className,
-                        muted,
-                        size,
-                        weight
-                    }),
-                    disableSelect && 'select-none'
-                )}
-                ref={ref}
-                {...props}
-            />
-        )
-    }
-)
+const Typography = ({
+    className,
+    variant = 'p',
+    muted,
+    size,
+    weight,
+    as,
+    disableSelect,
+    ...props
+}: TypographyProps) => {
+    const Comp: React.ElementType =
+        as ?? (variant ? variantElementMap[variant] : undefined) ?? 'div'
+
+    return (
+        <Comp
+            className={cn(
+                typographyVariants({
+                    variant,
+                    className,
+                    muted,
+                    size,
+                    weight
+                }),
+                disableSelect && 'select-none'
+            )}
+            {...props}
+        />
+    )
+}
 
 Typography.displayName = 'Typography'
 

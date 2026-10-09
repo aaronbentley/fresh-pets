@@ -22,7 +22,7 @@ const MainNav = () => {
                     {links.map((link, index) => (
                         <NavigationMenuItem key={index}>
                             <NavigationMenuLink
-                                asChild
+                                render={<Link href={link.href} />}
                                 active={pathname === link.href}
                                 className={cn(navigationMenuTriggerStyle(), [
                                     'font-bold',
@@ -31,9 +31,11 @@ const MainNav = () => {
                                     'hover:text-primary',
                                     'hover:bg-primary/20',
                                     'data-active:text-background',
-                                    'data-active:bg-primary'
+                                    'data-active:bg-primary',
+                                    'data-active:hover:bg-primary',
+                                    'data-active:focus:bg-primary'
                                 ])}>
-                                <Link href={link.href}>{link.label}</Link>
+                                {link.label}
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                     ))}

@@ -1,5 +1,5 @@
 import { Email, Messenger, Phone, WhatsApp } from '@/components/icons'
-import { Typography } from '@/components/typography'
+import { Typography, typographyVariants } from '@/components/typography'
 import {
     Dialog,
     DialogContent,
@@ -9,13 +9,13 @@ import {
     DialogTrigger
 } from '@/components/ui/dialog'
 
-const MakeBooking = ({ children }: { children: React.ReactNode }) => (
+const MakeBooking = ({ children }: { children: React.ReactElement }) => (
     <Dialog>
-        <DialogTrigger asChild>{children}</DialogTrigger>
-        <DialogContent>
+        <DialogTrigger render={children} />
+        <DialogContent className='sm:max-w-lg'>
             <DialogHeader>
-                <DialogTitle asChild>
-                    <Typography variant='h5'>Make a Booking</Typography>
+                <DialogTitle className={typographyVariants({ variant: 'h5' })}>
+                    Make a Booking
                 </DialogTitle>
                 <DialogDescription>
                     Get in touch with us to book your appointment
