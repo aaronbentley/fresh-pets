@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
     trailingSlash: true,
     images: {
         remotePatterns: [
@@ -13,10 +14,7 @@ const nextConfig = {
             }
         ],
         formats: ['image/avif', 'image/webp']
-    },
-    experimental: {
-        ppr: false
     }
 }
 
-module.exports = nextConfig
+export default nextConfig

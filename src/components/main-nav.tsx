@@ -21,27 +21,20 @@ const MainNav = () => {
                 <NavigationMenuList>
                     {links.map((link, index) => (
                         <NavigationMenuItem key={index}>
-                            <Link
-                                href={link.href}
-                                legacyBehavior
-                                passHref>
-                                <NavigationMenuLink
-                                    active={pathname === link.href}
-                                    className={cn(
-                                        navigationMenuTriggerStyle(),
-                                        [
-                                            'font-bold',
-                                            'transition-colors',
-                                            'duration-200',
-                                            'hover:text-primary',
-                                            'hover:bg-primary/20',
-                                            'data-active:text-background',
-                                            'data-active:bg-primary'
-                                        ]
-                                    )}>
-                                    {link.label}
-                                </NavigationMenuLink>
-                            </Link>
+                            <NavigationMenuLink
+                                asChild
+                                active={pathname === link.href}
+                                className={cn(navigationMenuTriggerStyle(), [
+                                    'font-bold',
+                                    'transition-colors',
+                                    'duration-200',
+                                    'hover:text-primary',
+                                    'hover:bg-primary/20',
+                                    'data-active:text-background',
+                                    'data-active:bg-primary'
+                                ])}>
+                                <Link href={link.href}>{link.label}</Link>
+                            </NavigationMenuLink>
                         </NavigationMenuItem>
                     ))}
                 </NavigationMenuList>

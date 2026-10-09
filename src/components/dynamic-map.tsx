@@ -10,7 +10,7 @@ import {
     Marker,
     useLoadScript
 } from '@react-google-maps/api'
-import { AlertCircle } from 'lucide-react'
+import { CircleAlert } from 'lucide-react'
 
 const DynamicMap = () => {
     /**
@@ -31,7 +31,7 @@ const DynamicMap = () => {
                 <Alert
                     variant='destructive'
                     className='max-w-96'>
-                    <AlertCircle className='h-4 w-4' />
+                    <CircleAlert className='h-4 w-4' />
                     <AlertTitle>Error</AlertTitle>
                     <AlertDescription>
                         There was a problem loading the map. Please try again
